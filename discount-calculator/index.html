@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discount Calculator – Sale Price &amp; Savings | CalcNest</title>
+<meta name="description" content="Discount calculator: enter the original price and discount percentage to find the sale price and savings, with optional extra discount and sales tax or VAT.">
+<link rel="canonical" href="https://calcnest.com/discount-calculator/">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CalcNest">
+<meta property="og:title" content="Discount Calculator – Sale Price &amp; Savings | CalcNest">
+<meta property="og:description" content="Discount calculator: enter the original price and discount percentage to find the sale price and savings, with optional extra discount and sales tax or VAT.">
+<meta property="og:url" content="https://calcnest.com/discount-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23c2552d%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Discount Calculator","url":"https://calcnest.com/discount-calculator/","description":"Discount calculator: enter the original price and discount percentage to find the sale price and savings, with optional extra discount and sales tax or VAT.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"CalcNest","url":"https://calcnest.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate a percentage discount?","acceptedAnswer":{"@type":"Answer","text":"Multiply the price by the discount percentage divided by 100 to get the saving, then subtract it from the price. Or multiply by (1 − discount/100) in one step."}},{"@type":"Question","name":"How much is 30% off 80?","acceptedAnswer":{"@type":"Answer","text":"30% of 80 is 24, so the sale price is 56."}},{"@type":"Question","name":"Do two discounts add together?","acceptedAnswer":{"@type":"Answer","text":"No. A second discount applies to the reduced price, so 20% and 10% together equal 28% off."}},{"@type":"Question","name":"Is tax added before or after the discount?","acceptedAnswer":{"@type":"Answer","text":"Usually after: the discount reduces the price first, then tax applies to the lower amount. Check your local rules."}},{"@type":"Question","name":"How do I find the original price from the sale price?","acceptedAnswer":{"@type":"Answer","text":"Divide the sale price by (1 − discount/100). If an item costs 75 after 25% off, the original price was 75 ÷ 0.75 = 100."}},{"@type":"Question","name":"What is the percentage saved?","acceptedAnswer":{"@type":"Answer","text":"Savings divided by the original price, times 100. The calculator shows it for you."}},{"@type":"Question","name":"Does this work in any currency?","acceptedAnswer":{"@type":"Answer","text":"Yes. Amounts have no symbol, so use your own currency."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calcnest.com/"},{"@type":"ListItem","position":2,"name":"Everyday","item":"https://calcnest.com/#calculators"},{"@type":"ListItem","position":3,"name":"Discount Calculator","item":"https://calcnest.com/discount-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap wrap--wide">
+<a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+<nav class="nav" aria-label="Main">
+<a href="../">Home</a>
+<a href="../#calculators">All Calculators</a>
+<a href="../about/">About</a>
+<a class="nav-cta" href="../#calculators">Browse tools</a>
+</nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><a href="../#calculators">Everyday</a><span>/</span>Discount Calculator</nav>
+<div class="page-head"><h1>Discount Calculator</h1><p class="intro">Enter the original price and the percent off to see the sale price and how much you save, with an optional extra discount and sales tax.</p></div>
+
+<section class="calc" aria-label="Discount Calculator">
+<form id="calc-form" novalidate>
+<div class="fields">
+<div class="field"><label for="f-price">Original price</label><div class="input-wrap"><input id="f-price" name="price" type="number" inputmode="decimal" step="any" min="0" value="120" placeholder="" data-label="Original price" required data-positive></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-off">Discount</label><div class="input-wrap"><input id="f-off" name="off" type="number" inputmode="decimal" step="any" min="0" value="25" placeholder="" data-label="Discount" required data-max="100" class="has-unit"><span class="unit">% off</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-extra">Extra discount (optional)</label><div class="input-wrap"><input id="f-extra" name="extra" type="number" inputmode="decimal" step="any" min="0" value="0" placeholder="" data-label="Extra discount (optional)" required data-max="100" class="has-unit"><span class="unit">% off</span></div><span class="hint">Applied after the first discount, such as a coupon.</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-tax">Sales tax / VAT / GST (optional)</label><div class="input-wrap"><input id="f-tax" name="tax" type="number" inputmode="decimal" step="any" min="0" value="0" placeholder="" data-label="Sales tax / VAT / GST (optional)" required data-max="100" class="has-unit"><span class="unit">%</span></div><p class="field-error" role="alert" hidden></p></div>
+</div>
+<p class="form-error" id="form-error" role="alert" hidden></p>
+<div class="actions"><button class="btn" type="submit">Calculate</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+</form>
+<div class="result" id="result" aria-live="polite" hidden></div>
+</section>
+
+<div class="ad-slot"></div>
+
+<article class="article">
+<h2>How to use this calculator</h2>
+<ol><li>Enter the <strong>original price</strong> before any discount.</li><li>Type the <strong>percentage off</strong> shown on the sale tag.</li><li>If you have a coupon, add it as an <strong>extra discount</strong>; it is applied after the first.</li><li>Enter your <strong>sales tax or VAT</strong> to see the price you actually pay, then press <strong>Calculate</strong>.</li></ol>
+
+<h2>The formula</h2>
+<div class="formula" tabindex="0">sale price = price × (1 − discount% ÷ 100)
+with extra = sale price × (1 − extra% ÷ 100)
+tax = price after discounts × tax% ÷ 100
+final = price after discounts + tax</div>
+<div class="example"><b>Worked example</b>A 120 jacket at 25% off = 120 × 0.75 = <strong>90</strong>. A further 10% coupon makes it 81. With 8% tax: 81 × 1.08 = <strong>87.48</strong>. You save 39 before tax.</div>
+
+<div class="ad-slot"></div>
+
+<h2>Common discounts on a 100 item</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Discount</th><th scope="col">Sale price</th><th scope="col">You save</th></tr></thead>
+<tbody><tr><td>10% off</td><td>90</td><td>10</td></tr><tr><td>20% off</td><td>80</td><td>20</td></tr><tr><td>25% off</td><td>75</td><td>25</td></tr><tr><td>30% off</td><td>70</td><td>30</td></tr><tr><td>50% off</td><td>50</td><td>50</td></tr><tr><td>70% off</td><td>30</td><td>70</td></tr></tbody></table></div>
+<p class="table-note">For other prices, scale proportionally.</p>
+
+<h2>How stacked discounts really work</h2>
+<p>When a store offers “20% off, then an extra 10% off”, the second discount applies to the already-reduced price. The total saving is 28%, not 30%. This calculator applies them in sequence, matching how checkouts do it, so you can see the true price before buying.</p>
+<h2>Tax, VAT and GST</h2>
+<p>Tax is normally added after discounts. In the US, sales tax varies by state and city; in the UK, VAT is usually already included in the shelf price; in Canada and Australia, GST (and in Canada PST or HST) is added at the till. Enter your local rate to see the figure you will actually pay.</p>
+<h2>Is the discount a real bargain?</h2>
+<ul><li>Compare the sale price with the price at other shops.</li><li>Be wary of inflated “original” prices.</li><li>Factor in delivery fees and returns policies.</li></ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How do I calculate a percentage discount?</summary><div class="answer"><p>Multiply the price by the discount percentage divided by 100 to get the saving, then subtract it from the price. Or multiply by (1 − discount/100) in one step.</p></div></details>
+<details><summary>How much is 30% off 80?</summary><div class="answer"><p>30% of 80 is 24, so the sale price is 56.</p></div></details>
+<details><summary>Do two discounts add together?</summary><div class="answer"><p>No. A second discount applies to the reduced price, so 20% and 10% together equal 28% off.</p></div></details>
+<details><summary>Is tax added before or after the discount?</summary><div class="answer"><p>Usually after: the discount reduces the price first, then tax applies to the lower amount. Check your local rules.</p></div></details>
+<details><summary>How do I find the original price from the sale price?</summary><div class="answer"><p>Divide the sale price by (1 − discount/100). If an item costs 75 after 25% off, the original price was 75 ÷ 0.75 = 100.</p></div></details>
+<details><summary>What is the percentage saved?</summary><div class="answer"><p>Savings divided by the original price, times 100. The calculator shows it for you.</p></div></details>
+<details><summary>Does this work in any currency?</summary><div class="answer"><p>Yes. Amounts have no symbol, so use your own currency.</p></div></details>
+
+<h2>Related calculators</h2>
+<div class="related"><a href="../percentage-calculator/"><span class="ri" aria-hidden="true">％</span>Percentage Calculator</a><a href="../tip-calculator/"><span class="ri" aria-hidden="true">🧾</span>Tip Calculator</a><a href="../bmi-calculator/"><span class="ri" aria-hidden="true">⚖️</span>BMI Calculator</a><a href="../flooring-calculator/"><span class="ri" aria-hidden="true">🪵</span>Flooring Calculator</a></div>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap wrap--wide">
+<div class="foot-grid">
+<div><a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a><p>Free online calculators for home, hobby, pets and everyday life. Fast, private, and free — every calculation runs in your browser.</p></div>
+<div><h4>Popular tools</h4><ul><li><a href="../epoxy-resin-calculator/">Epoxy Resin Calculator</a></li><li><a href="../river-table-epoxy-calculator/">River Table Epoxy Calculator</a></li><li><a href="../yarn-calculator/">Yarn Calculator</a></li><li><a href="../candle-wax-calculator/">Candle Wax Calculator</a></li><li><a href="../quilt-backing-calculator/">Quilt Backing Calculator</a></li><li><a href="../paint-calculator/">Paint Calculator</a></li></ul></div>
+<div><h4>CalcNest</h4><ul>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+<li><a href="../privacy-policy/">Privacy Policy</a></li>
+<li><a href="../terms/">Terms of Use</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 CalcNest. All rights reserved.</span><span>Results are estimates — always double-check before you buy or pour.</span></div>
+</div></footer>
+<script src="../main.js" defer></script>
+<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(function (v) {
+    var d1 = v.price * (1 - (v.off || 0) / 100), d2 = d1 * (1 - (v.extra || 0) / 100);
+    var tax = d2 * (v.tax || 0) / 100, final = d2 + tax, saved = v.price - d2;
+    var rows = [['Original price', MM.fmt(v.price, 2)], ['After ' + (v.off || 0) + '% off', MM.fmt(d1, 2)]];
+    if (v.extra) rows.push(['After extra ' + v.extra + '% off', MM.fmt(d2, 2)]);
+    rows.push(['You save', MM.fmt(saved, 2) + ' (' + MM.fmt(saved / v.price * 100, 1) + '%)']);
+    if (v.tax) rows.push(['Tax (' + v.tax + '%)', MM.fmt(tax, 2)]);
+    return { headline: { label: v.tax ? 'Final price with tax' : 'Sale price', value: MM.fmt(final, 2), sub: 'You save ' + MM.fmt(saved, 2) }, rows: rows, notes: [{ t: 'Two discounts of 25% and 10% combine to 32.5% off, not 35%, because the second applies to the reduced price.' }] };
+  });});</script>
+</body>
+</html>

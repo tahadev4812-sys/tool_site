@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quilt Backing Calculator – How Much Fabric? | CalcNest</title>
+<meta name="description" content="Quilt backing calculator: find out how many yards of fabric you need for your quilt back, comparing vertical and horizontal seams on standard or wide fabric.">
+<link rel="canonical" href="https://calcnest.com/quilt-backing-calculator/">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CalcNest">
+<meta property="og:title" content="Quilt Backing Calculator – How Much Fabric? | CalcNest">
+<meta property="og:description" content="Quilt backing calculator: find out how many yards of fabric you need for your quilt back, comparing vertical and horizontal seams on standard or wide fabric.">
+<meta property="og:url" content="https://calcnest.com/quilt-backing-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23c2552d%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Quilt Backing Calculator","url":"https://calcnest.com/quilt-backing-calculator/","description":"Quilt backing calculator: find out how many yards of fabric you need for your quilt back, comparing vertical and horizontal seams on standard or wide fabric.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"CalcNest","url":"https://calcnest.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much fabric do I need for quilt backing?","acceptedAnswer":{"@type":"Answer","text":"Add 8 inches to the quilt width and length (4 in per side), then divide by the usable fabric width to find the number of panels. Multiply by the backing length in yards. The calculator does it for you and rounds up to the nearest ¼ yard."}},{"@type":"Question","name":"What is the usable width of quilting fabric?","acceptedAnswer":{"@type":"Answer","text":"Standard quilting cotton is sold at 42–44 in wide, but about 40 in is usable once the selvedges are trimmed. Wide backing at 108 in gives roughly 104 in usable."}},{"@type":"Question","name":"Should I run the seam vertically or horizontally?","acceptedAnswer":{"@type":"Answer","text":"Choose whichever needs fewer yards, as shown by the calculator. A vertical seam usually saves fabric on tall quilts; a horizontal seam can save fabric on very wide ones."}},{"@type":"Question","name":"How much extra backing do I need for a longarm quilter?","acceptedAnswer":{"@type":"Answer","text":"Most longarmers ask for 4–6 inches extra on each side. Check with your quilter before you buy."}},{"@type":"Question","name":"Do I need to pre-wash the backing fabric?","acceptedAnswer":{"@type":"Answer","text":"It’s a good idea. Cotton can shrink 2–5% in the wash, so buy a little extra if you pre-wash."}},{"@type":"Question","name":"Can I use the calculator in metric?","acceptedAnswer":{"@type":"Answer","text":"Yes. Switch to centimeters and enter your sizes in cm. The calculator converts to inches internally and shows the result in yards and meters."}},{"@type":"Question","name":"Why round up to the nearest quarter yard?","acceptedAnswer":{"@type":"Answer","text":"Fabric shops usually cut in ¼ yard increments, so rounding up makes sure you buy enough fabric."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calcnest.com/"},{"@type":"ListItem","position":2,"name":"Craft & Making","item":"https://calcnest.com/#calculators"},{"@type":"ListItem","position":3,"name":"Quilt Backing Calculator","item":"https://calcnest.com/quilt-backing-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap wrap--wide">
+<a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+<nav class="nav" aria-label="Main">
+<a href="../">Home</a>
+<a href="../#calculators">All Calculators</a>
+<a href="../about/">About</a>
+<a class="nav-cta" href="../#calculators">Browse tools</a>
+</nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><a href="../#calculators">Craft &amp; Making</a><span>/</span>Quilt Backing Calculator</nav>
+<div class="page-head"><h1>Quilt Backing Calculator</h1><p class="intro">Enter your quilt size and the width of your fabric to see exactly how many yards of backing to buy, comparing both seam layouts.</p></div>
+
+<section class="calc" aria-label="Quilt Backing Calculator">
+<form id="calc-form" novalidate>
+<div class="fields">
+<div class="field"><label for="f-units">Units</label><select id="f-units" name="units"><option value="in" selected>Inches (in)</option><option value="cm">Centimeters (cm)</option></select><p class="field-error" role="alert" hidden></p></div><div class="field"><label for="f-qw">Quilt width</label><div class="input-wrap"><input id="f-qw" name="qw" type="number" inputmode="decimal" step="any" min="0" value="60" placeholder="" data-label="Quilt width" required data-positive data-default-in="60" data-default-cm="152" class="has-unit"><span class="unit" data-u-in="in" data-u-cm="cm">in</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-ql">Quilt length</label><div class="input-wrap"><input id="f-ql" name="ql" type="number" inputmode="decimal" step="any" min="0" value="80" placeholder="" data-label="Quilt length" required data-positive data-default-in="80" data-default-cm="203" class="has-unit"><span class="unit" data-u-in="in" data-u-cm="cm">in</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-extra">Extra per side</label><div class="input-wrap"><input id="f-extra" name="extra" type="number" inputmode="decimal" step="any" min="0" value="4" placeholder="" data-label="Extra per side" required data-positive data-default-in="4" data-default-cm="10" class="has-unit"><span class="unit" data-u-in="in" data-u-cm="cm">in</span></div><span class="hint">4 in (10 cm) per side is standard for longarm quilting.</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-fabric">Fabric width</label><select id="f-fabric" name="fabric"><option value="40" selected>Standard 42–44 in (use 40 in)</option><option value="104">Wide backing 108 in (use 104 in)</option></select><p class="field-error" role="alert" hidden></p></div>
+</div>
+<p class="form-error" id="form-error" role="alert" hidden></p>
+<div class="actions"><button class="btn" type="submit">Calculate</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+</form>
+<div class="result" id="result" aria-live="polite" hidden></div>
+</section>
+
+<div class="ad-slot"></div>
+
+<article class="article">
+<h2>How to use this calculator</h2>
+<ol><li>Choose <strong>inches or centimeters</strong> and enter your finished <strong>quilt width and length</strong>.</li><li>Set the <strong>extra per side</strong>. Four inches (10 cm) on every edge is the usual allowance for quilting and squaring up.</li><li>Pick your <strong>fabric width</strong>: standard 42–44 in cotton (40 in usable after trimming selvedges) or 108 in wide backing (104 in usable).</li><li>Press <strong>Calculate</strong> to compare vertical and horizontal seam layouts.</li><li>Buy the <strong>recommended yardage</strong>, which is rounded up to the nearest quarter yard.</li></ol>
+
+<h2>The formula</h2>
+<div class="formula" tabindex="0">backing W = quilt W + 2 × extra
+backing L = quilt L + 2 × extra
+
+<span class="c">// vertical seams</span>
+panels = ceil(backing W ÷ usable width) · yards = panels × backing L ÷ 36
+<span class="c">// horizontal seams</span>
+panels = ceil(backing L ÷ usable width) · yards = panels × backing W ÷ 36
+
+round up to the nearest ¼ yard</div>
+<div class="example"><b>Worked example</b>A 60 × 80 in quilt with 4 in extra per side needs a 68 × 88 in back. On 40 in usable fabric: <strong>vertical seams</strong> = 2 panels × 88 ÷ 36 = 4.89 → <strong>5 yd</strong>; <strong>horizontal seams</strong> = 3 panels × 68 ÷ 36 = 5.67 → 5¾ yd. The vertical layout is cheaper.</div>
+
+<div class="ad-slot"></div>
+
+<h2>Standard quilt sizes and backing yardage</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Quilt</th><th scope="col">Finished size (in)</th><th scope="col">Standard 42" fabric</th><th scope="col">108" wide fabric</th></tr></thead>
+<tbody><tr><td>Baby / crib</td><td>36 × 52</td><td>2½ yd</td><td>1¼ yd</td></tr><tr><td>Lap</td><td>50 × 65</td><td>3¼ yd</td><td>1¾ yd</td></tr><tr><td>Twin</td><td>70 × 90</td><td>5½ yd</td><td>2¼ yd</td></tr><tr><td>Full / double</td><td>86 × 90</td><td>8 yd</td><td>2¾ yd</td></tr><tr><td>Queen</td><td>90 × 108</td><td>8¼ yd</td><td>3¼ yd</td></tr><tr><td>King</td><td>108 × 108</td><td>9¾ yd</td><td>6½ yd</td></tr></tbody></table></div>
+<p class="table-note">Typical industry figures including a 4 in allowance per side. Use the calculator above for your exact size.</p>
+
+<h2>Why backing needs to be bigger than the quilt top</h2>
+<p>The quilt back must be larger than the top so there is room to load it on a longarm frame, to clamp it during hand quilting, and to allow for “draw-up” — the slight shrinking that happens as quilting stitches pull the layers together. Four inches on each side is the standard allowance; use 2–3 inches for a domestic machine and up to 6 inches if you are sending the quilt to a professional quilter.</p>
+<h2>Wide backing or standard cotton?</h2>
+<p>Wide-backing fabric, around 108 inches, lets you use a single piece for most quilts up to queen size, with no seams to match. It often costs more per yard, but you buy fewer yards. Standard quilting cotton is more widely available in prints, but needs one or two seams. For small quilts such as baby and lap sizes, standard cotton is usually cheaper; for queen and king quilts, wide backing is generally the better value.</p>
+<h2>Seam placement tips</h2>
+<ul><li>Press seams open to reduce bulk and help the needle glide.</li><li>Trim away selvedges before joining panels; they shrink differently and can pucker.</li><li>A centre seam is the most common, but an off-centre seam is often easier to line up on a longarm.</li></ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How much fabric do I need for quilt backing?</summary><div class="answer"><p>Add 8 inches to the quilt width and length (4 in per side), then divide by the usable fabric width to find the number of panels. Multiply by the backing length in yards. The calculator does it for you and rounds up to the nearest ¼ yard.</p></div></details>
+<details><summary>What is the usable width of quilting fabric?</summary><div class="answer"><p>Standard quilting cotton is sold at 42–44 in wide, but about 40 in is usable once the selvedges are trimmed. Wide backing at 108 in gives roughly 104 in usable.</p></div></details>
+<details><summary>Should I run the seam vertically or horizontally?</summary><div class="answer"><p>Choose whichever needs fewer yards, as shown by the calculator. A vertical seam usually saves fabric on tall quilts; a horizontal seam can save fabric on very wide ones.</p></div></details>
+<details><summary>How much extra backing do I need for a longarm quilter?</summary><div class="answer"><p>Most longarmers ask for 4–6 inches extra on each side. Check with your quilter before you buy.</p></div></details>
+<details><summary>Do I need to pre-wash the backing fabric?</summary><div class="answer"><p>It’s a good idea. Cotton can shrink 2–5% in the wash, so buy a little extra if you pre-wash.</p></div></details>
+<details><summary>Can I use the calculator in metric?</summary><div class="answer"><p>Yes. Switch to centimeters and enter your sizes in cm. The calculator converts to inches internally and shows the result in yards and meters.</p></div></details>
+<details><summary>Why round up to the nearest quarter yard?</summary><div class="answer"><p>Fabric shops usually cut in ¼ yard increments, so rounding up makes sure you buy enough fabric.</p></div></details>
+
+<h2>Related calculators</h2>
+<div class="related"><a href="../yarn-calculator/"><span class="ri" aria-hidden="true">🧶</span>Yarn Calculator</a><a href="../candle-wax-calculator/"><span class="ri" aria-hidden="true">🕯️</span>Candle Wax Calculator</a><a href="../epoxy-resin-calculator/"><span class="ri" aria-hidden="true">🧪</span>Epoxy Resin Calculator</a><a href="../paint-calculator/"><span class="ri" aria-hidden="true">🎨</span>Paint Calculator</a></div>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap wrap--wide">
+<div class="foot-grid">
+<div><a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a><p>Free online calculators for home, hobby, pets and everyday life. Fast, private, and free — every calculation runs in your browser.</p></div>
+<div><h4>Popular tools</h4><ul><li><a href="../epoxy-resin-calculator/">Epoxy Resin Calculator</a></li><li><a href="../river-table-epoxy-calculator/">River Table Epoxy Calculator</a></li><li><a href="../yarn-calculator/">Yarn Calculator</a></li><li><a href="../candle-wax-calculator/">Candle Wax Calculator</a></li><li><a href="../quilt-backing-calculator/">Quilt Backing Calculator</a></li><li><a href="../paint-calculator/">Paint Calculator</a></li></ul></div>
+<div><h4>CalcNest</h4><ul>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+<li><a href="../privacy-policy/">Privacy Policy</a></li>
+<li><a href="../terms/">Terms of Use</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 CalcNest. All rights reserved.</span><span>Results are estimates — always double-check before you buy or pour.</span></div>
+</div></footer>
+<script src="../main.js" defer></script>
+<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(function (v) {
+    var k = v.units === 'cm' ? 1 / 2.54 : 1;
+    var qw = v.qw * k, ql = v.ql * k, ex = v.extra * k, usable = +v.fabric;
+    var bw = qw + 2 * ex, bl = ql + 2 * ex;
+    var pv = Math.ceil(bw / usable - 1e-9), yv = pv * bl / 36;
+    var ph = Math.ceil(bl / usable - 1e-9), yh = ph * bw / 36;
+    var qv = MM.ceilTo(yv, 0.25), qh = MM.ceilTo(yh, 0.25);
+    var vert = qv <= qh, best = vert ? qv : qh, panels = vert ? pv : ph;
+    var dim = function (n) { return v.units === 'cm' ? MM.fmt(n * 2.54, 0) + ' cm' : MM.fmt(n, 1) + ' in'; };
+    return {
+      headline: {
+        label: 'Buy at least',
+        value: MM.frac(best) + ' yards',
+        sub: (panels === 1 ? 'one piece, no seam needed' : panels + ' panels, seams run ' + (vert ? 'vertically (top to bottom)' : 'horizontally (side to side)')) + ' · ' + MM.fmt(best * 0.9144, 2) + ' m'
+      },
+      rows: [
+        { section: 'Backing size needed' },
+        ['Backing width', dim(bw)], ['Backing length', dim(bl)],
+        { section: 'Option A — vertical seams' },
+        ['Panels', String(pv)], ['Yardage', MM.frac(qv) + ' yd'],
+        { section: 'Option B — horizontal seams' },
+        ['Panels', String(ph)], ['Yardage', MM.frac(qh) + ' yd'],
+        { section: 'Recommended' },
+        ['Best option', vert ? 'A — vertical seams' : 'B — horizontal seams'],
+        ['Yardage to buy', MM.frac(best) + ' yd · ' + MM.fmt(best * 0.9144, 2) + ' m']
+      ],
+      notes: [{ t: qv === qh ? 'Both layouts need the same yardage, so choose the seam placement you prefer.' : 'Pick the layout with the lowest yardage shown above to save money.' },
+        { t: 'Yardage is rounded up to the nearest ¼ yard. Pre-washing may shrink fabric by 2–5%, so consider buying a little extra.' }]
+    };
+  });});</script>
+</body>
+</html>

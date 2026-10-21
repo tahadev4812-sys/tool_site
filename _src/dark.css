@@ -1,0 +1,38 @@
+
+/* ---------- Dark mode (follows the visitor's system setting) ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171210; --bg-deep: #211a16; --card: #201a17; --text: #f1e8dc; --muted: #b3a595;
+    --border: #3a2f28; --accent: #e0714a; --accent-dark: #ea8a66; --accent-soft: #3a241b;
+    --result: #6fc0ae; --result-soft: #17241f; --gold: #cfa95e; --espresso: #0f0b09;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.4); --shadow-md: 0 8px 24px rgba(0,0,0,.4); --shadow-lg: 0 16px 48px rgba(0,0,0,.5);
+  }
+  .site-header { background: rgba(23, 18, 16, .86); }
+  .nav .nav-cta, .chip.active { background: var(--accent); color: #1a0f0a; border-color: var(--accent); }
+  .nav .nav-cta:hover { background: var(--accent-dark); color: #1a0f0a; }
+  .tool:hover { border-color: #5a4638; }
+  .tool[data-cat="home"] .tool-icon { background: #232a38; }
+  .feature { background: linear-gradient(180deg, var(--card), var(--bg)); }
+  .field input, .field select { background: #1a1411; }
+  .field input:focus, .field select:focus { background: #231c18; }
+  .field.invalid input, .field.invalid select { background: #2a1613; }
+  .form-error, .notes .danger, .callout.safety { background: #2c1713; border-color: #5a2a22; color: #f0b3a6; }
+  .field-error { color: #f09a8a; }
+  .notes .warn { background: #2e2412; border-color: #5a4720; color: #e8c987; }
+  .result { border-color: #2c4a40; }
+  .result-top { background: linear-gradient(145deg, #2a6558, #1d443a); }
+  .result-table th { color: #a9cdc3; }
+  .result-table td { color: #d8efe8; }
+  .result-table th, .result-table td { border-top-color: #274238; }
+  .result-table tr.sep th { background: rgba(111, 192, 174, .1); }
+  .notes { color: #a9cdc3; }
+  .result-actions button { background: transparent; border-color: #2c4a40; }
+  .result-actions button:hover { color: #10201b; }
+  .example { border-color: #5a3526; }
+  .table-wrap tbody tr:hover td { background: #261e19; }
+  .article ol > li::before { background: var(--bg-deep); border: 1px solid var(--border); }
+  .formula { background: #0f0b09; border: 1px solid var(--border); border-left: 4px solid var(--gold); }
+  details .answer, .prose p, .prose li { color: #d3c7b9; }
+  .site-footer { background: #0f0b09; }
+  .callout { background: var(--card); }
+}

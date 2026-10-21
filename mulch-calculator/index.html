@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mulch Calculator – Cubic Yards &amp; Bags Needed | CalcNest</title>
+<meta name="description" content="Mulch calculator for garden beds: enter the length, width and depth to get cubic yards, cubic feet, cubic meters and how many 2 cu ft or 3 cu ft bags to buy.">
+<link rel="canonical" href="https://calcnest.com/mulch-calculator/">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CalcNest">
+<meta property="og:title" content="Mulch Calculator – Cubic Yards &amp; Bags Needed | CalcNest">
+<meta property="og:description" content="Mulch calculator for garden beds: enter the length, width and depth to get cubic yards, cubic feet, cubic meters and how many 2 cu ft or 3 cu ft bags to buy.">
+<meta property="og:url" content="https://calcnest.com/mulch-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23c2552d%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Mulch Calculator","url":"https://calcnest.com/mulch-calculator/","description":"Mulch calculator for garden beds: enter the length, width and depth to get cubic yards, cubic feet, cubic meters and how many 2 cu ft or 3 cu ft bags to buy.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"CalcNest","url":"https://calcnest.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much mulch do I need for a 10 × 20 bed?","acceptedAnswer":{"@type":"Answer","text":"At 3 inches deep, a 200 sq ft bed needs 50 cubic feet, or about 1.85 cubic yards, plus a little extra for settling."}},{"@type":"Question","name":"How many bags of mulch are in a cubic yard?","acceptedAnswer":{"@type":"Answer","text":"A cubic yard is 27 cubic feet, so it takes 13.5 bags of 2 cu ft or 9 bags of 3 cu ft."}},{"@type":"Question","name":"How deep should I spread mulch?","acceptedAnswer":{"@type":"Answer","text":"Usually 2–4 inches. Thinner layers do not suppress weeds; thicker layers can suffocate roots."}},{"@type":"Question","name":"How often should I replace mulch?","acceptedAnswer":{"@type":"Answer","text":"Top up annually. Organic mulch decomposes, so refresh the layer to its original depth each year or two."}},{"@type":"Question","name":"Do I need landscape fabric under mulch?","acceptedAnswer":{"@type":"Answer","text":"Not always. Fabric can help on paths, but in planting beds it often stops organic mulch from feeding the soil."}},{"@type":"Question","name":"Can I use the calculator for gravel?","acceptedAnswer":{"@type":"Answer","text":"Yes — the volume is calculated the same way. For weight, multiply the cubic yards by the density from your supplier."}},{"@type":"Question","name":"What does the metric option give me?","acceptedAnswer":{"@type":"Answer","text":"Cubic meters, liters and bags of 50 liters, for UK, Canadian and Australian suppliers."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calcnest.com/"},{"@type":"ListItem","position":2,"name":"Home & DIY","item":"https://calcnest.com/#calculators"},{"@type":"ListItem","position":3,"name":"Mulch Calculator","item":"https://calcnest.com/mulch-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap wrap--wide">
+<a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+<nav class="nav" aria-label="Main">
+<a href="../">Home</a>
+<a href="../#calculators">All Calculators</a>
+<a href="../about/">About</a>
+<a class="nav-cta" href="../#calculators">Browse tools</a>
+</nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><a href="../#calculators">Home &amp; DIY</a><span>/</span>Mulch Calculator</nav>
+<div class="page-head"><h1>Mulch Calculator</h1><p class="intro">Enter the size of your garden bed and the depth you want to see how much mulch to order — in cubic yards or meters and in bags.</p></div>
+
+<section class="calc" aria-label="Mulch Calculator">
+<form id="calc-form" novalidate>
+<div class="fields">
+<div class="field"><label for="f-units">Units</label><select id="f-units" name="units"><option value="imperial" selected>Imperial (ft, in)</option><option value="metric">Metric (m, cm)</option></select><p class="field-error" role="alert" hidden></p></div><div class="field"><label for="f-length">Bed length</label><div class="input-wrap"><input id="f-length" name="length" type="number" inputmode="decimal" step="any" min="0" value="20" placeholder="" data-label="Bed length" required data-positive data-default-imperial="20" data-default-metric="6" class="has-unit"><span class="unit" data-u-imperial="ft" data-u-metric="m">ft</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-width">Bed width</label><div class="input-wrap"><input id="f-width" name="width" type="number" inputmode="decimal" step="any" min="0" value="10" placeholder="" data-label="Bed width" required data-positive data-default-imperial="10" data-default-metric="3" class="has-unit"><span class="unit" data-u-imperial="ft" data-u-metric="m">ft</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-depth">Mulch depth</label><div class="input-wrap"><input id="f-depth" name="depth" type="number" inputmode="decimal" step="any" min="0" value="3" placeholder="" data-label="Mulch depth" required data-positive data-default-imperial="3" data-default-metric="7.5" class="has-unit"><span class="unit" data-u-imperial="in" data-u-metric="cm">in</span></div><span class="hint">2–4 in (5–10 cm) is typical.</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-waste">Extra</label><div class="input-wrap"><input id="f-waste" name="waste" type="number" inputmode="decimal" step="any" min="0" value="5" placeholder="" data-label="Extra" required data-max="50" class="has-unit"><span class="unit">%</span></div><span class="hint">Allows for settling and uneven ground.</span><p class="field-error" role="alert" hidden></p></div>
+</div>
+<p class="form-error" id="form-error" role="alert" hidden></p>
+<div class="actions"><button class="btn" type="submit">Calculate</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+</form>
+<div class="result" id="result" aria-live="polite" hidden></div>
+</section>
+
+<div class="ad-slot"></div>
+
+<article class="article">
+<h2>How to use this calculator</h2>
+<ol><li>Choose <strong>imperial or metric</strong> and measure the <strong>length and width</strong> of the bed. Split curved beds into simple rectangles.</li><li>Enter the <strong>depth</strong> of mulch you want to spread.</li><li>Keep the <strong>5% extra</strong> for settling, or raise it for uneven ground.</li><li>Press <strong>Calculate</strong> to see bulk volume and the number of bags.</li></ol>
+
+<h2>The formula</h2>
+<div class="formula" tabindex="0">volume (ft³) = length × width × depth (in) ÷ 12
+cubic yards = ft³ ÷ 27 · cubic meters = ft³ ÷ 35.315
+bags = ft³ ÷ bag size (2 or 3 ft³)</div>
+<div class="example"><b>Worked example</b>A 20 × 10 ft bed with 3 in of mulch: 20 × 10 × 3 ÷ 12 = 50 ft³. Add 5% = 52.5 ft³ = <strong>1.94 cubic yards</strong>, or <strong>27 bags</strong> of 2 cu ft.</div>
+
+<div class="ad-slot"></div>
+
+<h2>How far one cubic yard goes</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Depth</th><th scope="col">Coverage per cubic yard</th></tr></thead>
+<tbody><tr><td>2 in (5 cm)</td><td>162 sq ft (15 m²)</td></tr><tr><td>3 in (7.5 cm)</td><td>108 sq ft (10 m²)</td></tr><tr><td>4 in (10 cm)</td><td>81 sq ft (7.5 m²)</td></tr><tr><td>6 in (15 cm)</td><td>54 sq ft (5 m²)</td></tr></tbody></table></div>
+<p class="table-note">One cubic yard equals 27 cubic feet, or about 0.76 cubic meters.</p>
+
+<h2>How deep should mulch be?</h2>
+<p>Two to three inches suits most flower and shrub beds: enough to block weeds and hold moisture without smothering roots. Use 3–4 inches around trees and in play areas, where wood chips also cushion falls. A deeper layer is not better — mulch piled against stems traps moisture and invites pests and rot.</p>
+<h2>Bags or bulk?</h2>
+<p>Bagged mulch is convenient for small beds, but each 2 cu ft bag covers only 12 sq ft at 2 inches deep. A cubic yard is the same as 13.5 two-cubic-foot bags and is usually much cheaper when delivered by the truck-load. If you need more than two yards, ask local landscape suppliers for a quote.</p>
+<h2>Choosing a mulch</h2>
+<ul><li><strong>Bark and wood chips:</strong> long-lasting, good for trees and paths.</li><li><strong>Shredded hardwood:</strong> knits together on slopes.</li><li><strong>Compost or leaf mould:</strong> feeds soil in vegetable beds.</li><li><strong>Gravel:</strong> permanent, but does not add nutrients.</li></ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How much mulch do I need for a 10 × 20 bed?</summary><div class="answer"><p>At 3 inches deep, a 200 sq ft bed needs 50 cubic feet, or about 1.85 cubic yards, plus a little extra for settling.</p></div></details>
+<details><summary>How many bags of mulch are in a cubic yard?</summary><div class="answer"><p>A cubic yard is 27 cubic feet, so it takes 13.5 bags of 2 cu ft or 9 bags of 3 cu ft.</p></div></details>
+<details><summary>How deep should I spread mulch?</summary><div class="answer"><p>Usually 2–4 inches. Thinner layers do not suppress weeds; thicker layers can suffocate roots.</p></div></details>
+<details><summary>How often should I replace mulch?</summary><div class="answer"><p>Top up annually. Organic mulch decomposes, so refresh the layer to its original depth each year or two.</p></div></details>
+<details><summary>Do I need landscape fabric under mulch?</summary><div class="answer"><p>Not always. Fabric can help on paths, but in planting beds it often stops organic mulch from feeding the soil.</p></div></details>
+<details><summary>Can I use the calculator for gravel?</summary><div class="answer"><p>Yes — the volume is calculated the same way. For weight, multiply the cubic yards by the density from your supplier.</p></div></details>
+<details><summary>What does the metric option give me?</summary><div class="answer"><p>Cubic meters, liters and bags of 50 liters, for UK, Canadian and Australian suppliers.</p></div></details>
+
+<h2>Related calculators</h2>
+<div class="related"><a href="../concrete-calculator/"><span class="ri" aria-hidden="true">🏗️</span>Concrete Calculator</a><a href="../wood-stain-calculator/"><span class="ri" aria-hidden="true">🪑</span>Wood Stain Calculator</a><a href="../paint-calculator/"><span class="ri" aria-hidden="true">🎨</span>Paint Calculator</a><a href="../dog-food-calculator/"><span class="ri" aria-hidden="true">🦴</span>Dog Food Calculator</a></div>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap wrap--wide">
+<div class="foot-grid">
+<div><a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a><p>Free online calculators for home, hobby, pets and everyday life. Fast, private, and free — every calculation runs in your browser.</p></div>
+<div><h4>Popular tools</h4><ul><li><a href="../epoxy-resin-calculator/">Epoxy Resin Calculator</a></li><li><a href="../river-table-epoxy-calculator/">River Table Epoxy Calculator</a></li><li><a href="../yarn-calculator/">Yarn Calculator</a></li><li><a href="../candle-wax-calculator/">Candle Wax Calculator</a></li><li><a href="../quilt-backing-calculator/">Quilt Backing Calculator</a></li><li><a href="../paint-calculator/">Paint Calculator</a></li></ul></div>
+<div><h4>CalcNest</h4><ul>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+<li><a href="../privacy-policy/">Privacy Policy</a></li>
+<li><a href="../terms/">Terms of Use</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 CalcNest. All rights reserved.</span><span>Results are estimates — always double-check before you buy or pour.</span></div>
+</div></footer>
+<script src="../main.js" defer></script>
+<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(function (v) {
+    var m = v.units === 'metric', cuft;
+    cuft = m ? v.length * v.width * (v.depth / 100) * 35.3147 : v.length * v.width * (v.depth / 12);
+    var waste = v.waste || 0, t = cuft * (1 + waste / 100), yd = t / 27, m3 = t / 35.3147;
+    return {
+      headline: { label: 'Mulch needed', value: m ? MM.fmt(m3, 2) + ' m³' : MM.fmt(yd, 2) + ' yd³', sub: (m ? MM.fmt(yd, 2) + ' cubic yards' : MM.fmt(m3, 2) + ' cubic meters') + ' · ' + MM.fmt(t, 1) + ' cubic feet' },
+      rows: [
+        { section: 'Volume (with ' + waste + '% extra)' },
+        ['Cubic yards', MM.fmt(yd, 2)], ['Cubic feet', MM.fmt(t, 1)], ['Cubic meters', MM.fmt(m3, 2)], ['Liters', MM.fmt(m3 * 1000, 0)],
+        { section: 'Bags (rounded up)' },
+        ['2 cu ft bags', String(Math.ceil(t / 2 - 1e-9))], ['3 cu ft bags', String(Math.ceil(t / 3 - 1e-9))], ['50 liter bags', String(Math.ceil(m3 * 1000 / 50 - 1e-9))]
+      ],
+      notes: [{ t: yd >= 2 ? 'For two or more cubic yards, bulk delivery is usually cheaper than bags.' : 'This amount is a good fit for bagged mulch.' },
+        { t: 'Keep mulch a few inches away from tree trunks and plant stems to prevent rot.' }]
+    };
+  });});</script>
+</body>
+</html>

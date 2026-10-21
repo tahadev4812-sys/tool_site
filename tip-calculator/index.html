@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tip Calculator – Split the Bill &amp; Tip Fast | CalcNest</title>
+<meta name="description" content="Free tip calculator: enter the bill and tip percentage to see the tip, the total and each person’s share when you split the check. Works for any currency.">
+<link rel="canonical" href="https://calcnest.com/tip-calculator/">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CalcNest">
+<meta property="og:title" content="Tip Calculator – Split the Bill &amp; Tip Fast | CalcNest">
+<meta property="og:description" content="Free tip calculator: enter the bill and tip percentage to see the tip, the total and each person’s share when you split the check. Works for any currency.">
+<meta property="og:url" content="https://calcnest.com/tip-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23c2552d%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Tip Calculator","url":"https://calcnest.com/tip-calculator/","description":"Free tip calculator: enter the bill and tip percentage to see the tip, the total and each person’s share when you split the check. Works for any currency.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"CalcNest","url":"https://calcnest.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate a 20% tip?","acceptedAnswer":{"@type":"Answer","text":"Multiply the bill by 0.2. A quick way is to find 10% by moving the decimal point one place, and then double it."}},{"@type":"Question","name":"How much should I tip at a restaurant?","acceptedAnswer":{"@type":"Answer","text":"In the US and Canada 15–20% is standard. In the UK 10–12.5% is common if no service charge is included, and in Australia a tip is optional."}},{"@type":"Question","name":"Should I tip before or after tax?","acceptedAnswer":{"@type":"Answer","text":"Either is acceptable. Many people tip on the pre-tax amount; others use the total."}},{"@type":"Question","name":"How do I split a bill with a tip?","acceptedAnswer":{"@type":"Answer","text":"Add the tip to the bill and divide the total by the number of people. The calculator shows each person’s share."}},{"@type":"Question","name":"What if service was poor?","acceptedAnswer":{"@type":"Answer","text":"Many diners lower the tip for genuinely poor service, but first consider whether the problem was in the kitchen or the staff’s control."}},{"@type":"Question","name":"Does it work with other currencies?","acceptedAnswer":{"@type":"Answer","text":"Yes. Amounts have no currency symbol, so use any currency."}},{"@type":"Question","name":"Is a service charge the same as a tip?","acceptedAnswer":{"@type":"Answer","text":"Not always. Ask whether it goes to the staff, and do not tip twice unless you want to."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calcnest.com/"},{"@type":"ListItem","position":2,"name":"Everyday","item":"https://calcnest.com/#calculators"},{"@type":"ListItem","position":3,"name":"Tip Calculator","item":"https://calcnest.com/tip-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap wrap--wide">
+<a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+<nav class="nav" aria-label="Main">
+<a href="../">Home</a>
+<a href="../#calculators">All Calculators</a>
+<a href="../about/">About</a>
+<a class="nav-cta" href="../#calculators">Browse tools</a>
+</nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><a href="../#calculators">Everyday</a><span>/</span>Tip Calculator</nav>
+<div class="page-head"><h1>Tip Calculator</h1><p class="intro">Enter your bill, choose a tip percentage and the number of people to see the tip, the total and what everyone owes.</p></div>
+
+<section class="calc" aria-label="Tip Calculator">
+<form id="calc-form" novalidate>
+<div class="fields">
+<div class="field"><label for="f-bill">Bill amount</label><div class="input-wrap"><input id="f-bill" name="bill" type="number" inputmode="decimal" step="any" min="0" value="85.5" placeholder="" data-label="Bill amount" required data-positive></div><span class="hint">Any currency — before tip.</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-pct">Tip percentage</label><div class="input-wrap"><input id="f-pct" name="pct" type="number" inputmode="decimal" step="any" min="0" value="18" placeholder="" data-label="Tip percentage" required data-max="100" class="has-unit"><span class="unit">%</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-people">Split between</label><div class="input-wrap"><input id="f-people" name="people" type="number" inputmode="decimal" step="1" min="0" value="4" placeholder="" data-label="Split between" required data-positive data-max="100" class="has-unit"><span class="unit">people</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-round">Round each share up?</label><select id="f-round" name="round"><option value="no" selected>No — exact amounts</option><option value="yes">Yes — to the next whole number</option></select><p class="field-error" role="alert" hidden></p></div>
+</div>
+<p class="form-error" id="form-error" role="alert" hidden></p>
+<div class="actions"><button class="btn" type="submit">Calculate tip</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+</form>
+<div class="result" id="result" aria-live="polite" hidden></div>
+</section>
+
+<div class="ad-slot"></div>
+
+<article class="article">
+<h2>How to use this calculator</h2>
+<ol><li>Enter the <strong>bill amount</strong> before the tip.</li><li>Type your <strong>tip percentage</strong> — see the guide below if you are unsure.</li><li>Enter how many <strong>people</strong> are splitting the check.</li><li>Choose whether to <strong>round shares up</strong> to the next whole number, then press <strong>Calculate tip</strong>.</li></ol>
+
+<h2>The formula</h2>
+<div class="formula" tabindex="0">tip = bill × tip% ÷ 100
+total = bill + tip
+each person = total ÷ number of people</div>
+<div class="example"><b>Worked example</b>A bill of 85.50 with an 18% tip: tip = 85.50 × 0.18 = <strong>15.39</strong>. Total = <strong>100.89</strong>. Split between 4 people, each pays <strong>25.22</strong>.</div>
+
+<div class="ad-slot"></div>
+
+<h2>Typical tipping norms</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Country</th><th scope="col">Restaurants</th><th scope="col">Notes</th></tr></thead>
+<tbody><tr><td>United States</td><td>15–20%</td><td>Tipping is expected; staff rely on it.</td></tr><tr><td>Canada</td><td>15–20%</td><td>Similar to the US.</td></tr><tr><td>United Kingdom</td><td>10–12.5%</td><td>Check whether a service charge is already included.</td></tr><tr><td>Australia</td><td>0–10%</td><td>Optional; for great service.</td></tr></tbody></table></div>
+<p class="table-note">General customs only — practices differ by venue and region.</p>
+
+<h2>Tip on the pre-tax amount?</h2>
+<p>Many people tip on the pre-tax subtotal, while others tip on the total. Either is acceptable; the difference on a typical meal is small. Enter whichever amount you prefer as the bill. If your check already includes an automatic service charge, which is common for large parties, you generally do not need to add another tip.</p>
+<h2>Splitting fairly</h2>
+<p>An even split is the quickest, but it can feel unfair when some people order much more. In that case, work out each person’s own bill and tip, or round up shares so the server is covered. The “round up” option makes the maths painless — the extra goes to the tip.</p>
+<h2>Tipping beyond restaurants</h2>
+<ul><li>Delivery drivers and rideshare: 10–20%.</li><li>Hairdressers and barbers: 10–20%.</li><li>Taxi: round up or 10%.</li><li>Hotel housekeeping and porters: a small fixed amount per day or bag.</li></ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How do I calculate a 20% tip?</summary><div class="answer"><p>Multiply the bill by 0.2. A quick way is to find 10% by moving the decimal point one place, and then double it.</p></div></details>
+<details><summary>How much should I tip at a restaurant?</summary><div class="answer"><p>In the US and Canada 15–20% is standard. In the UK 10–12.5% is common if no service charge is included, and in Australia a tip is optional.</p></div></details>
+<details><summary>Should I tip before or after tax?</summary><div class="answer"><p>Either is acceptable. Many people tip on the pre-tax amount; others use the total.</p></div></details>
+<details><summary>How do I split a bill with a tip?</summary><div class="answer"><p>Add the tip to the bill and divide the total by the number of people. The calculator shows each person’s share.</p></div></details>
+<details><summary>What if service was poor?</summary><div class="answer"><p>Many diners lower the tip for genuinely poor service, but first consider whether the problem was in the kitchen or the staff’s control.</p></div></details>
+<details><summary>Does it work with other currencies?</summary><div class="answer"><p>Yes. Amounts have no currency symbol, so use any currency.</p></div></details>
+<details><summary>Is a service charge the same as a tip?</summary><div class="answer"><p>Not always. Ask whether it goes to the staff, and do not tip twice unless you want to.</p></div></details>
+
+<h2>Related calculators</h2>
+<div class="related"><a href="../percentage-calculator/"><span class="ri" aria-hidden="true">％</span>Percentage Calculator</a><a href="../discount-calculator/"><span class="ri" aria-hidden="true">🏷️</span>Discount Calculator</a><a href="../bmi-calculator/"><span class="ri" aria-hidden="true">⚖️</span>BMI Calculator</a><a href="../paint-calculator/"><span class="ri" aria-hidden="true">🎨</span>Paint Calculator</a></div>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap wrap--wide">
+<div class="foot-grid">
+<div><a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a><p>Free online calculators for home, hobby, pets and everyday life. Fast, private, and free — every calculation runs in your browser.</p></div>
+<div><h4>Popular tools</h4><ul><li><a href="../epoxy-resin-calculator/">Epoxy Resin Calculator</a></li><li><a href="../river-table-epoxy-calculator/">River Table Epoxy Calculator</a></li><li><a href="../yarn-calculator/">Yarn Calculator</a></li><li><a href="../candle-wax-calculator/">Candle Wax Calculator</a></li><li><a href="../quilt-backing-calculator/">Quilt Backing Calculator</a></li><li><a href="../paint-calculator/">Paint Calculator</a></li></ul></div>
+<div><h4>CalcNest</h4><ul>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+<li><a href="../privacy-policy/">Privacy Policy</a></li>
+<li><a href="../terms/">Terms of Use</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 CalcNest. All rights reserved.</span><span>Results are estimates — always double-check before you buy or pour.</span></div>
+</div></footer>
+<script src="../main.js" defer></script>
+<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(function (v) {
+    var n = Math.max(1, Math.round(v.people)), tip = v.bill * (v.pct || 0) / 100, total = v.bill + tip;
+    var each = total / n; if (v.round === 'yes') each = Math.ceil(each - 1e-9);
+    var paid = each * n;
+    var rows = [
+      ['Bill', MM.fmt(v.bill, 2)], ['Tip (' + (v.pct || 0) + '%)', MM.fmt(tip, 2)], ['Total', MM.fmt(total, 2)],
+      ['Tip per person', MM.fmt(tip / n, 2)], ['Bill per person', MM.fmt(v.bill / n, 2)]
+    ];
+    if (v.round === 'yes') rows.push(['Collected after rounding', MM.fmt(paid, 2) + ' (extra tip ' + MM.fmt(paid - total, 2) + ')']);
+    return { headline: { label: n > 1 ? 'Each person pays' : 'Total to pay', value: MM.fmt(each, 2), sub: 'Tip ' + MM.fmt(tip, 2) + ' · total ' + MM.fmt(total, 2) }, rows: rows, notes: [] };
+  });});</script>
+</body>
+</html>

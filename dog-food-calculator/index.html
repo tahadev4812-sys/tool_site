@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dog Food Calculator – How Much Should I Feed? | CalcNest</title>
+<meta name="description" content="Dog food calculator: estimate your dog’s daily calories from weight and life stage, then convert to cups or grams of food per day and per meal.">
+<link rel="canonical" href="https://calcnest.com/dog-food-calculator/">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CalcNest">
+<meta property="og:title" content="Dog Food Calculator – How Much Should I Feed? | CalcNest">
+<meta property="og:description" content="Dog food calculator: estimate your dog’s daily calories from weight and life stage, then convert to cups or grams of food per day and per meal.">
+<meta property="og:url" content="https://calcnest.com/dog-food-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23c2552d%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Dog Food Calculator","url":"https://calcnest.com/dog-food-calculator/","description":"Dog food calculator: estimate your dog’s daily calories from weight and life stage, then convert to cups or grams of food per day and per meal.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"CalcNest","url":"https://calcnest.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much should I feed my dog per day?","acceptedAnswer":{"@type":"Answer","text":"It depends on weight, age and activity. A neutered 40 lb adult dog needs roughly 985 calories per day, about 2.7 cups of a 370 kcal-per-cup food."}},{"@type":"Question","name":"How many times a day should I feed a dog?","acceptedAnswer":{"@type":"Answer","text":"Two meals a day suit most adult dogs. Puppies often need three or four smaller meals."}},{"@type":"Question","name":"How do I find the calories in my dog food?","acceptedAnswer":{"@type":"Answer","text":"Look for “kcal per cup” or “metabolizable energy” on the packaging or the manufacturer’s website."}},{"@type":"Question","name":"How much should a puppy eat?","acceptedAnswer":{"@type":"Answer","text":"Puppies need much more energy per pound than adults — roughly two to three times resting energy. Follow your vet’s guidance and adjust as they grow."}},{"@type":"Question","name":"My dog is overweight. What should I do?","acceptedAnswer":{"@type":"Answer","text":"Select “weight loss” and enter the target weight. Slow, steady loss under a vet’s supervision is safest."}},{"@type":"Question","name":"Is a cup the same as 100 grams?","acceptedAnswer":{"@type":"Answer","text":"Roughly for dry kibble, but kibble density varies a lot, so weigh the food on a scale for accuracy."}},{"@type":"Question","name":"Is this a substitute for vet advice?","acceptedAnswer":{"@type":"Answer","text":"No. It is a general guide; dogs with health conditions have special needs."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calcnest.com/"},{"@type":"ListItem","position":2,"name":"Pets","item":"https://calcnest.com/#calculators"},{"@type":"ListItem","position":3,"name":"Dog Food Calculator","item":"https://calcnest.com/dog-food-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap wrap--wide">
+<a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+<nav class="nav" aria-label="Main">
+<a href="../">Home</a>
+<a href="../#calculators">All Calculators</a>
+<a href="../about/">About</a>
+<a class="nav-cta" href="../#calculators">Browse tools</a>
+</nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><a href="../#calculators">Pets</a><span>/</span>Dog Food Calculator</nav>
+<div class="page-head"><h1>Dog Food Calculator</h1><p class="intro">Enter your dog’s weight and life stage to estimate daily calories, then turn that into cups or grams using the calorie count on your dog’s food.</p></div>
+
+<section class="calc" aria-label="Dog Food Calculator">
+<form id="calc-form" novalidate>
+<div class="fields">
+<div class="field"><label for="f-units">Weight in</label><select id="f-units" name="units"><option value="lb" selected>Pounds (lb)</option><option value="kg">Kilograms (kg)</option></select><p class="field-error" role="alert" hidden></p></div><div class="field"><label for="f-weight">Dog’s weight</label><div class="input-wrap"><input id="f-weight" name="weight" type="number" inputmode="decimal" step="any" min="0" value="40" placeholder="" data-label="Dog’s weight" required data-positive data-default-lb="40" data-default-kg="18" class="has-unit"><span class="unit" data-u-lb="lb" data-u-kg="kg">lb</span></div><span class="hint">For weight loss, enter the ideal (target) weight.</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-stage">Life stage / goal</label><select id="f-stage" name="stage"><option value="adult" selected>Neutered adult</option><option value="intact">Intact adult</option><option value="inactive">Inactive or prone to weight gain</option><option value="loss">Weight loss</option><option value="pup">Puppy under 4 months</option><option value="pup2">Puppy 4 months to adult</option><option value="active">Highly active / working</option></select><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-kcal">Calories per cup of your food</label><div class="input-wrap"><input id="f-kcal" name="kcal" type="number" inputmode="decimal" step="any" min="0" value="370" placeholder="" data-label="Calories per cup of your food" required data-positive class="has-unit"><span class="unit">kcal</span></div><span class="hint">See the label. Dry dog food is often 300–450 kcal per cup.</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-meals">Meals per day</label><div class="input-wrap"><input id="f-meals" name="meals" type="number" inputmode="decimal" step="1" min="0" value="2" placeholder="" data-label="Meals per day" required data-positive data-max="8"></div><p class="field-error" role="alert" hidden></p></div>
+</div>
+<p class="form-error" id="form-error" role="alert" hidden></p>
+<div class="actions"><button class="btn" type="submit">Calculate</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+</form>
+<div class="result" id="result" aria-live="polite" hidden></div>
+</section>
+
+<div class="ad-slot"></div>
+
+<article class="article">
+<h2>How to use this calculator</h2>
+<ol><li>Enter your dog’s <strong>weight</strong> in pounds or kilograms.</li><li>Pick the <strong>life stage or goal</strong> that matches your dog.</li><li>Enter the <strong>calories per cup</strong> from the food’s packaging.</li><li>Choose the <strong>meals per day</strong> and press <strong>Calculate</strong>.</li><li>Check your dog’s weight and body shape every few weeks, and adjust the portion by about 10% if needed.</li></ol>
+
+<h2>The formula</h2>
+<div class="formula" tabindex="0">RER (kcal/day) = 70 × (weight in kg)^0.75
+daily kcal = RER × life stage factor
+
+factors: neutered adult 1.6 · intact adult 1.8 · inactive 1.4
+weight loss 1.0 · puppy <4 months 3.0 · puppy 4+ months 2.0
+active / working 3.0
+
+cups per day = daily kcal ÷ kcal per cup</div>
+<div class="example"><b>Worked example</b>A neutered adult dog weighing 40 lb (18.1 kg): RER = 70 × 18.1^0.75 ≈ 616 kcal. × 1.6 = <strong>985 kcal per day</strong>. At 370 kcal per cup, that is <strong>2.7 cups per day</strong>, or 1.3 cups at each of two meals.</div>
+
+<div class="ad-slot"></div>
+
+<h2>Daily calories for neutered adult dogs</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Weight</th><th scope="col">Calories per day</th><th scope="col">Cups at 370 kcal/cup</th></tr></thead>
+<tbody><tr><td>10 lb (4.5 kg)</td><td>≈ 348</td><td>0.9</td></tr><tr><td>25 lb (11.3 kg)</td><td>≈ 692</td><td>1.9</td></tr><tr><td>40 lb (18.1 kg)</td><td>≈ 985</td><td>2.7</td></tr><tr><td>60 lb (27.2 kg)</td><td>≈ 1,335</td><td>3.6</td></tr><tr><td>80 lb (36.3 kg)</td><td>≈ 1,656</td><td>4.5</td></tr></tbody></table></div>
+<p class="table-note">Starting estimates only — activity, breed and metabolism vary.</p>
+
+<h2>Why calories beat the feeding chart on the bag</h2>
+<p>Feeding charts on pet food bags are broad averages and tend to overestimate for neutered, indoor dogs. Working from your dog’s own energy requirement gives a far more tailored target. The resting energy figure estimates what your dog burns just to stay alive, and the life-stage factor adds the energy used for growth, activity and recovery.</p>
+<h2>Check body condition, not just numbers</h2>
+<p>Use the result as a starting point, then watch your dog. You should be able to feel the ribs under a thin layer of fat, see a waist from above and a tucked belly from the side. If your dog is gaining, cut the portion by 10%; if they look too thin, add 10% and talk to your vet.</p>
+<h2>Treats and extras</h2>
+<p>Treats, chews and table scraps add up quickly. A good rule is to keep them under 10% of the daily calories and reduce the main meal to match. Training treats can be broken into pea-sized pieces.</p>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How much should I feed my dog per day?</summary><div class="answer"><p>It depends on weight, age and activity. A neutered 40 lb adult dog needs roughly 985 calories per day, about 2.7 cups of a 370 kcal-per-cup food.</p></div></details>
+<details><summary>How many times a day should I feed a dog?</summary><div class="answer"><p>Two meals a day suit most adult dogs. Puppies often need three or four smaller meals.</p></div></details>
+<details><summary>How do I find the calories in my dog food?</summary><div class="answer"><p>Look for “kcal per cup” or “metabolizable energy” on the packaging or the manufacturer’s website.</p></div></details>
+<details><summary>How much should a puppy eat?</summary><div class="answer"><p>Puppies need much more energy per pound than adults — roughly two to three times resting energy. Follow your vet’s guidance and adjust as they grow.</p></div></details>
+<details><summary>My dog is overweight. What should I do?</summary><div class="answer"><p>Select “weight loss” and enter the target weight. Slow, steady loss under a vet’s supervision is safest.</p></div></details>
+<details><summary>Is a cup the same as 100 grams?</summary><div class="answer"><p>Roughly for dry kibble, but kibble density varies a lot, so weigh the food on a scale for accuracy.</p></div></details>
+<details><summary>Is this a substitute for vet advice?</summary><div class="answer"><p>No. It is a general guide; dogs with health conditions have special needs.</p></div></details>
+
+<h2>Related calculators</h2>
+<div class="related"><a href="../cat-food-calculator/"><span class="ri" aria-hidden="true">🐈</span>Cat Food Calculator</a><a href="../dog-age-calculator/"><span class="ri" aria-hidden="true">🐕</span>Dog Age Calculator</a><a href="../dog-chocolate-toxicity-calculator/"><span class="ri" aria-hidden="true">🍫</span>Dog Chocolate Toxicity Calculator</a><a href="../mulch-calculator/"><span class="ri" aria-hidden="true">🌱</span>Mulch Calculator</a></div>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap wrap--wide">
+<div class="foot-grid">
+<div><a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a><p>Free online calculators for home, hobby, pets and everyday life. Fast, private, and free — every calculation runs in your browser.</p></div>
+<div><h4>Popular tools</h4><ul><li><a href="../epoxy-resin-calculator/">Epoxy Resin Calculator</a></li><li><a href="../river-table-epoxy-calculator/">River Table Epoxy Calculator</a></li><li><a href="../yarn-calculator/">Yarn Calculator</a></li><li><a href="../candle-wax-calculator/">Candle Wax Calculator</a></li><li><a href="../quilt-backing-calculator/">Quilt Backing Calculator</a></li><li><a href="../paint-calculator/">Paint Calculator</a></li></ul></div>
+<div><h4>CalcNest</h4><ul>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+<li><a href="../privacy-policy/">Privacy Policy</a></li>
+<li><a href="../terms/">Terms of Use</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 CalcNest. All rights reserved.</span><span>Results are estimates — always double-check before you buy or pour.</span></div>
+</div></footer>
+<script src="../main.js" defer></script>
+<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(function (v) {
+    var kg = v.units === 'kg' ? v.weight : v.weight / 2.20462;
+    var rer = 70 * Math.pow(kg, 0.75);
+    var f = { adult: 1.6, intact: 1.8, inactive: 1.4, loss: 1.0, pup: 3.0, pup2: 2.0, active: 3.0 }[v.stage];
+    var kcal = rer * f, cups = kcal / v.kcal, meals = Math.max(1, Math.round(v.meals));
+    var grams = cups * 100;
+    return {
+      headline: { label: 'Daily calories', value: MM.fmt(kcal, 0) + ' kcal', sub: MM.fmt(cups, 2) + ' cups of food per day at ' + v.kcal + ' kcal per cup' },
+      rows: [
+        { section: 'Energy' }, ['Resting energy (RER)', MM.fmt(rer, 0) + ' kcal'], ['Life stage factor', '× ' + f],
+        { section: 'Portions' }, ['Food per day', MM.fmt(cups, 2) + ' cups'], ['Food per meal (' + meals + ' meals)', MM.fmt(cups / meals, 2) + ' cups']
+      ],
+      notes: [{ t: 'A cup is about 100 g of typical dry food, but weigh yours for accuracy. Adjust by 10% if weight changes, and consult your vet for puppies, seniors or overweight dogs.' }]
+    };
+  });});</script>
+</body>
+</html>

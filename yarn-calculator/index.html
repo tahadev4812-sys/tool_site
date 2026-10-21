@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yarn Calculator – How Much Yarn Do I Need? | CalcNest</title>
+<meta name="description" content="Free yarn calculator for crochet and knitting. Use a gauge swatch to find the yardage and number of skeins you need for any blanket, scarf or sweater.">
+<link rel="canonical" href="https://calcnest.com/yarn-calculator/">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CalcNest">
+<meta property="og:title" content="Yarn Calculator – How Much Yarn Do I Need? | CalcNest">
+<meta property="og:description" content="Free yarn calculator for crochet and knitting. Use a gauge swatch to find the yardage and number of skeins you need for any blanket, scarf or sweater.">
+<meta property="og:url" content="https://calcnest.com/yarn-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23c2552d%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Yarn Calculator","url":"https://calcnest.com/yarn-calculator/","description":"Free yarn calculator for crochet and knitting. Use a gauge swatch to find the yardage and number of skeins you need for any blanket, scarf or sweater.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"CalcNest","url":"https://calcnest.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much yarn do I need for a blanket?","acceptedAnswer":{"@type":"Answer","text":"It depends on the size, yarn weight and stitch. As a rough guide, a worsted-weight baby blanket takes about 600 yd, a throw about 1,650 yd and a queen about 5,000 yd. A gauge swatch gives a far more reliable figure."}},{"@type":"Question","name":"How do I find yards per skein?","acceptedAnswer":{"@type":"Answer","text":"Look on the yarn label; it is printed as yards and meters, for example “220 yd / 201 m”. Yards per skein differ widely between brands and weights."}},{"@type":"Question","name":"Does the calculator work for knitting and crochet?","acceptedAnswer":{"@type":"Answer","text":"Yes. The swatch method works for any stitch, in knitting or crochet, as long as you use the same stitch pattern for the swatch and the project."}},{"@type":"Question","name":"Can I use centimeters?","acceptedAnswer":{"@type":"Answer","text":"Yes. Switch to centimeters and enter your swatch and project sizes in cm. The yardage remains in yards, with the metric total shown in meters."}},{"@type":"Question","name":"What if my swatch is not 4 inches?","acceptedAnswer":{"@type":"Answer","text":"Any size works. The calculator divides the yards used by the swatch area, so a 3 × 5 in swatch is just as valid as a 4 × 4 in one — but bigger swatches are more reliable."}},{"@type":"Question","name":"How many skeins do I need for a scarf?","acceptedAnswer":{"@type":"Answer","text":"A typical scarf of 8 × 60 in uses about 240–400 yards of worsted yarn, so usually 2 skeins. Enter your swatch and scarf size for an exact number."}},{"@type":"Question","name":"Should I round up the number of skeins?","acceptedAnswer":{"@type":"Answer","text":"Always. The calculator rounds up automatically, so you never end up one partial skein short."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calcnest.com/"},{"@type":"ListItem","position":2,"name":"Craft & Making","item":"https://calcnest.com/#calculators"},{"@type":"ListItem","position":3,"name":"Yarn Calculator","item":"https://calcnest.com/yarn-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap wrap--wide">
+<a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+<nav class="nav" aria-label="Main">
+<a href="../">Home</a>
+<a href="../#calculators">All Calculators</a>
+<a href="../about/">About</a>
+<a class="nav-cta" href="../#calculators">Browse tools</a>
+</nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><a href="../#calculators">Craft &amp; Making</a><span>/</span>Yarn Calculator</nav>
+<div class="page-head"><h1>Yarn Calculator</h1><p class="intro">Measure a small swatch, enter your project size, and get the yardage and number of skeins you need — accurate for any stitch pattern and any yarn.</p></div>
+
+<section class="calc" aria-label="Yarn Calculator">
+<form id="calc-form" novalidate>
+<div class="fields">
+<div class="field"><label for="f-units">Measuring in</label><select id="f-units" name="units"><option value="in" selected>Inches (in)</option><option value="cm">Centimeters (cm)</option></select><p class="field-error" role="alert" hidden></p></div><div class="field full"><label for="f-preset">Blanket size preset (optional)</label><select id="f-preset" name="preset" data-targets="pw,ph"><option value="custom" selected>Custom size</option><option value="30x36">Baby — 30 × 36 in</option><option value="50x60">Throw — 50 × 60 in</option><option value="66x90">Twin — 66 × 90 in</option><option value="80x90">Full — 80 × 90 in</option><option value="90x100">Queen — 90 × 100 in</option><option value="108x100">King — 108 × 100 in</option></select><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-sw">Swatch width</label><div class="input-wrap"><input id="f-sw" name="sw" type="number" inputmode="decimal" step="any" min="0" value="4" placeholder="" data-label="Swatch width" required data-positive data-default-in="4" data-default-cm="10" class="has-unit"><span class="unit" data-u-in="in" data-u-cm="cm">in</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-sh">Swatch height</label><div class="input-wrap"><input id="f-sh" name="sh" type="number" inputmode="decimal" step="any" min="0" value="4" placeholder="" data-label="Swatch height" required data-positive data-default-in="4" data-default-cm="10" class="has-unit"><span class="unit" data-u-in="in" data-u-cm="cm">in</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-sy">Yards used in swatch</label><div class="input-wrap"><input id="f-sy" name="sy" type="number" inputmode="decimal" step="any" min="0" value="8" placeholder="" data-label="Yards used in swatch" required data-positive class="has-unit"><span class="unit">yd</span></div><span class="hint">Weigh the swatch or unravel it and measure the yarn.</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-spy">Yards per skein</label><div class="input-wrap"><input id="f-spy" name="spy" type="number" inputmode="decimal" step="any" min="0" value="220" placeholder="" data-label="Yards per skein" required data-positive class="has-unit"><span class="unit">yd</span></div><span class="hint">Printed on the yarn label.</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-pw">Project width</label><div class="input-wrap"><input id="f-pw" name="pw" type="number" inputmode="decimal" step="any" min="0" value="50" placeholder="" data-label="Project width" required data-positive data-default-in="50" data-default-cm="127" class="has-unit"><span class="unit" data-u-in="in" data-u-cm="cm">in</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-ph">Project height / length</label><div class="input-wrap"><input id="f-ph" name="ph" type="number" inputmode="decimal" step="any" min="0" value="60" placeholder="" data-label="Project height / length" required data-positive data-default-in="60" data-default-cm="152" class="has-unit"><span class="unit" data-u-in="in" data-u-cm="cm">in</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field full"><label for="f-extra">Extra yarn for safety</label><div class="input-wrap"><input id="f-extra" name="extra" type="number" inputmode="decimal" step="any" min="0" value="10" placeholder="" data-label="Extra yarn for safety" required data-max="100" class="has-unit"><span class="unit">%</span></div><span class="hint">Covers swatch differences, tension changes, joins and weaving in ends.</span><p class="field-error" role="alert" hidden></p></div>
+</div>
+<p class="form-error" id="form-error" role="alert" hidden></p>
+<div class="actions"><button class="btn" type="submit">Calculate</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+</form>
+<div class="result" id="result" aria-live="polite" hidden></div>
+</section>
+
+<div class="ad-slot"></div>
+
+<article class="article">
+<h2>How to use this calculator</h2>
+<ol><li>Make a <strong>gauge swatch</strong> (about 4 × 4 in or 10 × 10 cm) in the stitch pattern and hook or needle size you plan to use.</li><li>Measure the <strong>swatch width and height</strong>, then work out the <strong>yards used</strong> — unravel it and measure, or weigh it and compare to the skein weight.</li><li>Pick a <strong>blanket preset</strong> or type your own <strong>project width and height</strong>. Use the same unit for the swatch and the project.</li><li>Enter the <strong>yards per skein</strong> from the label and keep the 10% extra allowance.</li><li>Press <strong>Calculate</strong> to see the total yardage and number of skeins to buy.</li></ol>
+
+<h2>The formula</h2>
+<div class="formula" tabindex="0">yards per square unit = swatch yards ÷ (swatch width × swatch height)
+total yards = yards per square unit × project width × project height × (1 + extra% ÷ 100)
+skeins = ceil( total yards ÷ yards per skein )
+meters = yards × 0.9144</div>
+<div class="example"><b>Worked example</b>A 4 × 4 in swatch uses 8 yards, so each square inch needs 8 ÷ 16 = 0.5 yd. A 50 × 60 in throw is 3,000 in², so it needs 1,500 yd; add 10% = <strong>1,650 yards</strong>. With 220 yd skeins: 1,650 ÷ 220 = 7.5 → <strong>8 skeins</strong>.</div>
+
+<div class="ad-slot"></div>
+
+<h2>Standard blanket sizes and yardage guide</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Blanket</th><th scope="col">Size (in)</th><th scope="col">Approx. yards*</th><th scope="col">Skeins of 220 yd</th></tr></thead>
+<tbody><tr><td>Baby</td><td>30 × 36</td><td>590</td><td>3</td></tr><tr><td>Throw</td><td>50 × 60</td><td>1,650</td><td>8</td></tr><tr><td>Twin</td><td>66 × 90</td><td>3,270</td><td>15</td></tr><tr><td>Full</td><td>80 × 90</td><td>3,950</td><td>18</td></tr><tr><td>Queen</td><td>90 × 100</td><td>4,950</td><td>23</td></tr><tr><td>King</td><td>108 × 100</td><td>5,900</td><td>27</td></tr></tbody></table></div>
+<p class="table-note">*Based on a worsted-weight swatch using 0.5 yd per square inch and 10% extra. Your own gauge swatch will give a more accurate result.</p>
+
+<h2>Why the swatch method is the most accurate</h2>
+<p>Rules of thumb such as “a throw needs 1,500 yards” ignore the things that actually decide yardage: your tension, your hook or needle size, and the stitch pattern. A dense single crochet fabric can use almost twice as much yarn per square inch as an open mesh. By measuring a real swatch in the exact stitch you will use, the calculator scales up your own consumption instead of guessing.</p>
+<h2>How to measure yarn used in a swatch</h2>
+<p>The easiest method is to weigh it. Weigh your swatch on a kitchen scale, then divide by the weight of a full skein and multiply by the skein’s yardage. For example, a swatch weighing 10 g from a 100 g, 220 yd skein used <em>10 ÷ 100 × 220 = 22 yd</em>. If you do not own a scale, unravel the swatch and measure the strand against a tape measure.</p>
+<h2>How much extra yarn should I buy?</h2>
+<p>The default 10% covers weaving in ends, joining new skeins and small differences between swatch and finished fabric. Go higher (15–20%) for lace, cables or colour-work, which consume more yarn. Always buy from one dye lot: shades vary between batches and a visible stripe halfway up a blanket is hard to hide.</p>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How much yarn do I need for a blanket?</summary><div class="answer"><p>It depends on the size, yarn weight and stitch. As a rough guide, a worsted-weight baby blanket takes about 600 yd, a throw about 1,650 yd and a queen about 5,000 yd. A gauge swatch gives a far more reliable figure.</p></div></details>
+<details><summary>How do I find yards per skein?</summary><div class="answer"><p>Look on the yarn label; it is printed as yards and meters, for example “220 yd / 201 m”. Yards per skein differ widely between brands and weights.</p></div></details>
+<details><summary>Does the calculator work for knitting and crochet?</summary><div class="answer"><p>Yes. The swatch method works for any stitch, in knitting or crochet, as long as you use the same stitch pattern for the swatch and the project.</p></div></details>
+<details><summary>Can I use centimeters?</summary><div class="answer"><p>Yes. Switch to centimeters and enter your swatch and project sizes in cm. The yardage remains in yards, with the metric total shown in meters.</p></div></details>
+<details><summary>What if my swatch is not 4 inches?</summary><div class="answer"><p>Any size works. The calculator divides the yards used by the swatch area, so a 3 × 5 in swatch is just as valid as a 4 × 4 in one — but bigger swatches are more reliable.</p></div></details>
+<details><summary>How many skeins do I need for a scarf?</summary><div class="answer"><p>A typical scarf of 8 × 60 in uses about 240–400 yards of worsted yarn, so usually 2 skeins. Enter your swatch and scarf size for an exact number.</p></div></details>
+<details><summary>Should I round up the number of skeins?</summary><div class="answer"><p>Always. The calculator rounds up automatically, so you never end up one partial skein short.</p></div></details>
+
+<h2>Related calculators</h2>
+<div class="related"><a href="../quilt-backing-calculator/"><span class="ri" aria-hidden="true">🧵</span>Quilt Backing Calculator</a><a href="../epoxy-resin-calculator/"><span class="ri" aria-hidden="true">🧪</span>Epoxy Resin Calculator</a><a href="../candle-wax-calculator/"><span class="ri" aria-hidden="true">🕯️</span>Candle Wax Calculator</a><a href="../dog-age-calculator/"><span class="ri" aria-hidden="true">🐕</span>Dog Age Calculator</a></div>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap wrap--wide">
+<div class="foot-grid">
+<div><a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a><p>Free online calculators for home, hobby, pets and everyday life. Fast, private, and free — every calculation runs in your browser.</p></div>
+<div><h4>Popular tools</h4><ul><li><a href="../epoxy-resin-calculator/">Epoxy Resin Calculator</a></li><li><a href="../river-table-epoxy-calculator/">River Table Epoxy Calculator</a></li><li><a href="../yarn-calculator/">Yarn Calculator</a></li><li><a href="../candle-wax-calculator/">Candle Wax Calculator</a></li><li><a href="../quilt-backing-calculator/">Quilt Backing Calculator</a></li><li><a href="../paint-calculator/">Paint Calculator</a></li></ul></div>
+<div><h4>CalcNest</h4><ul>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+<li><a href="../privacy-policy/">Privacy Policy</a></li>
+<li><a href="../terms/">Terms of Use</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 CalcNest. All rights reserved.</span><span>Results are estimates — always double-check before you buy or pour.</span></div>
+</div></footer>
+<script src="../main.js" defer></script>
+<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(function (v) {
+    var perArea = v.sy / (v.sw * v.sh);
+    var area = v.pw * v.ph, extra = v.extra || 0;
+    var yards = perArea * area * (1 + extra / 100);
+    var skeins = Math.ceil(yards / v.spy - 1e-9);
+    var plain = perArea * area;
+    return {
+      headline: { label: 'Skeins to buy', value: skeins + (skeins === 1 ? ' skein' : ' skeins'), sub: MM.fmt(yards, 0) + ' yards · ' + MM.fmt(yards * 0.9144, 0) + ' meters needed' },
+      rows: [
+        { section: 'Yardage' },
+        ['Yarn per square ' + (v.units === 'cm' ? 'cm' : 'inch'), MM.fmt(perArea, 4) + ' yd'],
+        ['Project area', MM.fmt(area, 0) + ' ' + (v.units === 'cm' ? 'cm²' : 'in²')],
+        ['Yardage without extra', MM.fmt(plain, 0) + ' yd'],
+        ['Total with ' + extra + '% extra', MM.fmt(yards, 0) + ' yd'],
+        ['Total in meters', MM.fmt(yards * 0.9144, 0) + ' m'],
+        { section: 'Skeins' },
+        ['Skeins of ' + v.spy + ' yd each', String(skeins)],
+        ['Yarn left over', MM.fmt(skeins * v.spy - yards, 0) + ' yd']
+      ],
+      notes: [{ t: 'Buy all your skeins from the same dye lot at once, so the colour matches across the project.' }]
+    };
+  });});</script>
+</body>
+</html>

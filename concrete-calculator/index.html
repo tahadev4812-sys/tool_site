@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concrete Calculator – Cubic Yards &amp; Bags Needed | CalcNest</title>
+<meta name="description" content="Concrete calculator for slabs, patios and pads: get cubic yards, cubic feet, cubic meters and the number of 80 lb, 60 lb and 50 lb bags with a waste allowance.">
+<link rel="canonical" href="https://calcnest.com/concrete-calculator/">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CalcNest">
+<meta property="og:title" content="Concrete Calculator – Cubic Yards &amp; Bags Needed | CalcNest">
+<meta property="og:description" content="Concrete calculator for slabs, patios and pads: get cubic yards, cubic feet, cubic meters and the number of 80 lb, 60 lb and 50 lb bags with a waste allowance.">
+<meta property="og:url" content="https://calcnest.com/concrete-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23c2552d%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Concrete Calculator","url":"https://calcnest.com/concrete-calculator/","description":"Concrete calculator for slabs, patios and pads: get cubic yards, cubic feet, cubic meters and the number of 80 lb, 60 lb and 50 lb bags with a waste allowance.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"CalcNest","url":"https://calcnest.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much concrete do I need for a 10 × 10 slab?","acceptedAnswer":{"@type":"Answer","text":"At 4 inches thick, a 10 × 10 ft slab needs 33.3 cubic feet, or about 1.23 cubic yards. With 10% extra, order about 1.36 cubic yards."}},{"@type":"Question","name":"How many 80 lb bags of concrete are in a yard?","acceptedAnswer":{"@type":"Answer","text":"About 45 bags of 80 lb mix make one cubic yard, because each bag yields roughly 0.6 cubic feet."}},{"@type":"Question","name":"How thick should a concrete patio be?","acceptedAnswer":{"@type":"Answer","text":"Four inches is standard for patios, paths and shed bases. Driveways usually need 5–6 inches."}},{"@type":"Question","name":"Do I need extra concrete for waste?","acceptedAnswer":{"@type":"Answer","text":"Yes, 5–10% extra is normal because of spillage, uneven ground and slightly over-dug sub-bases."}},{"@type":"Question","name":"How do I convert cubic feet to cubic yards?","acceptedAnswer":{"@type":"Answer","text":"Divide the number of cubic feet by 27, since one cubic yard equals 27 cubic feet."}},{"@type":"Question","name":"Can I calculate in metric?","acceptedAnswer":{"@type":"Answer","text":"Yes. Switch to metric and enter meters for length and width and centimeters for thickness. Results include cubic meters."}},{"@type":"Question","name":"Does this include the gravel base?","acceptedAnswer":{"@type":"Answer","text":"No. Calculate gravel separately; a 4 inch compacted base is typical under slabs."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calcnest.com/"},{"@type":"ListItem","position":2,"name":"Home & DIY","item":"https://calcnest.com/#calculators"},{"@type":"ListItem","position":3,"name":"Concrete Calculator","item":"https://calcnest.com/concrete-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap wrap--wide">
+<a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+<nav class="nav" aria-label="Main">
+<a href="../">Home</a>
+<a href="../#calculators">All Calculators</a>
+<a href="../about/">About</a>
+<a class="nav-cta" href="../#calculators">Browse tools</a>
+</nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><a href="../#calculators">Home &amp; DIY</a><span>/</span>Concrete Calculator</nav>
+<div class="page-head"><h1>Concrete Calculator</h1><p class="intro">Enter the length, width and thickness of your slab to see the concrete volume in cubic yards and how many bags of mix you need.</p></div>
+
+<section class="calc" aria-label="Concrete Calculator">
+<form id="calc-form" novalidate>
+<div class="fields">
+<div class="field"><label for="f-units">Units</label><select id="f-units" name="units"><option value="imperial" selected>Imperial (ft, in)</option><option value="metric">Metric (m, cm)</option></select><p class="field-error" role="alert" hidden></p></div><div class="field"><label for="f-length">Length</label><div class="input-wrap"><input id="f-length" name="length" type="number" inputmode="decimal" step="any" min="0" value="10" placeholder="" data-label="Length" required data-positive data-default-imperial="10" data-default-metric="3" class="has-unit"><span class="unit" data-u-imperial="ft" data-u-metric="m">ft</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-width">Width</label><div class="input-wrap"><input id="f-width" name="width" type="number" inputmode="decimal" step="any" min="0" value="10" placeholder="" data-label="Width" required data-positive data-default-imperial="10" data-default-metric="3" class="has-unit"><span class="unit" data-u-imperial="ft" data-u-metric="m">ft</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-thick">Thickness</label><div class="input-wrap"><input id="f-thick" name="thick" type="number" inputmode="decimal" step="any" min="0" value="4" placeholder="" data-label="Thickness" required data-positive data-default-imperial="4" data-default-metric="10" class="has-unit"><span class="unit" data-u-imperial="in" data-u-metric="cm">in</span></div><span class="hint">Patios and walkways: 4 in (10 cm). Driveways: 5–6 in (13–15 cm).</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-waste">Extra for waste</label><div class="input-wrap"><input id="f-waste" name="waste" type="number" inputmode="decimal" step="any" min="0" value="10" placeholder="" data-label="Extra for waste" required data-max="100" class="has-unit"><span class="unit">%</span></div><span class="hint">Covers spillage and uneven ground.</span><p class="field-error" role="alert" hidden></p></div>
+</div>
+<p class="form-error" id="form-error" role="alert" hidden></p>
+<div class="actions"><button class="btn" type="submit">Calculate</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+</form>
+<div class="result" id="result" aria-live="polite" hidden></div>
+</section>
+
+<div class="ad-slot"></div>
+
+<article class="article">
+<h2>How to use this calculator</h2>
+<ol><li>Choose <strong>imperial or metric</strong> units, then enter the slab <strong>length</strong> and <strong>width</strong>.</li><li>Enter the <strong>thickness</strong>. Four inches (10 cm) is standard for patios and paths.</li><li>Keep the <strong>10% waste</strong> allowance, or raise it for uneven ground.</li><li>Press <strong>Calculate</strong> to see cubic yards, cubic meters and the number of bags.</li><li>For anything over about 1.5 cubic yards, ask a ready-mix supplier for a quote.</li></ol>
+
+<h2>The formula</h2>
+<div class="formula" tabindex="0">volume (ft³) = length (ft) × width (ft) × thickness (in) ÷ 12
+total = volume × (1 + waste% ÷ 100)
+
+cubic yards = ft³ ÷ 27 · cubic meters = ft³ ÷ 35.315
+80 lb bags = ft³ ÷ 0.60 · 60 lb = ft³ ÷ 0.45 · 50 lb = ft³ ÷ 0.375</div>
+<div class="example"><b>Worked example</b>A 10 × 10 ft patio, 4 in thick: 10 × 10 × (4 ÷ 12) = 33.3 ft³. Add 10% = 36.7 ft³ = <strong>1.36 cubic yards</strong>, or <strong>62 bags</strong> of 80 lb mix.</div>
+
+<div class="ad-slot"></div>
+
+<h2>Concrete for a 4 inch slab</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Slab size (ft)</th><th scope="col">Cubic feet</th><th scope="col">Cubic yards</th><th scope="col">80 lb bags</th></tr></thead>
+<tbody><tr><td>10 × 10</td><td>33.3</td><td>1.23</td><td>56</td></tr><tr><td>10 × 12</td><td>40.0</td><td>1.48</td><td>67</td></tr><tr><td>12 × 12</td><td>48.0</td><td>1.78</td><td>80</td></tr><tr><td>16 × 16</td><td>85.3</td><td>3.16</td><td>143</td></tr><tr><td>20 × 20</td><td>133.3</td><td>4.94</td><td>223</td></tr><tr><td>24 × 24</td><td>192.0</td><td>7.11</td><td>320</td></tr></tbody></table></div>
+<p class="table-note">Without waste allowance. Add 10% when ordering.</p>
+
+<h2>Cubic yards: the unit concrete is sold in</h2>
+<p>In the US and Canada, ready-mix concrete is ordered by the cubic yard — a cube three feet on each side, equal to 27 cubic feet. UK and Australian suppliers use cubic meters, which is why this calculator reports both. Because delivery trucks usually have a minimum order, it often makes sense to order slightly more rather than risk running short during the pour.</p>
+<h2>Choose the right thickness</h2>
+<p>Thickness determines strength and cost. A <strong>4 inch</strong> slab suits footpaths, patios and shed bases. Garage floors and driveways that carry vehicles are usually <strong>5–6 inches</strong>. Heavy loads need engineering advice and steel reinforcement.</p><ul><li>Compact the sub-base before pouring.</li><li>Use reinforcement mesh or rebar for driveways and large slabs.</li><li>Cut control joints to guide cracking.</li></ul>
+<h2>Bagged mix or ready-mix?</h2>
+<p>One 80 lb bag makes about 0.6 cubic feet. A cubic yard therefore needs 45 bags — about 3,600 lb to lift and mix by hand. For small repairs, fence posts and steps, bags are ideal. For larger slabs, a delivered load saves time and gives a more consistent mix.</p>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How much concrete do I need for a 10 × 10 slab?</summary><div class="answer"><p>At 4 inches thick, a 10 × 10 ft slab needs 33.3 cubic feet, or about 1.23 cubic yards. With 10% extra, order about 1.36 cubic yards.</p></div></details>
+<details><summary>How many 80 lb bags of concrete are in a yard?</summary><div class="answer"><p>About 45 bags of 80 lb mix make one cubic yard, because each bag yields roughly 0.6 cubic feet.</p></div></details>
+<details><summary>How thick should a concrete patio be?</summary><div class="answer"><p>Four inches is standard for patios, paths and shed bases. Driveways usually need 5–6 inches.</p></div></details>
+<details><summary>Do I need extra concrete for waste?</summary><div class="answer"><p>Yes, 5–10% extra is normal because of spillage, uneven ground and slightly over-dug sub-bases.</p></div></details>
+<details><summary>How do I convert cubic feet to cubic yards?</summary><div class="answer"><p>Divide the number of cubic feet by 27, since one cubic yard equals 27 cubic feet.</p></div></details>
+<details><summary>Can I calculate in metric?</summary><div class="answer"><p>Yes. Switch to metric and enter meters for length and width and centimeters for thickness. Results include cubic meters.</p></div></details>
+<details><summary>Does this include the gravel base?</summary><div class="answer"><p>No. Calculate gravel separately; a 4 inch compacted base is typical under slabs.</p></div></details>
+
+<h2>Related calculators</h2>
+<div class="related"><a href="../grout-calculator/"><span class="ri" aria-hidden="true">🧱</span>Grout Calculator</a><a href="../paint-calculator/"><span class="ri" aria-hidden="true">🎨</span>Paint Calculator</a><a href="../river-table-epoxy-calculator/"><span class="ri" aria-hidden="true">🌊</span>River Table Epoxy Calculator</a><a href="../epoxy-resin-calculator/"><span class="ri" aria-hidden="true">🧪</span>Epoxy Resin Calculator</a></div>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap wrap--wide">
+<div class="foot-grid">
+<div><a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a><p>Free online calculators for home, hobby, pets and everyday life. Fast, private, and free — every calculation runs in your browser.</p></div>
+<div><h4>Popular tools</h4><ul><li><a href="../epoxy-resin-calculator/">Epoxy Resin Calculator</a></li><li><a href="../river-table-epoxy-calculator/">River Table Epoxy Calculator</a></li><li><a href="../yarn-calculator/">Yarn Calculator</a></li><li><a href="../candle-wax-calculator/">Candle Wax Calculator</a></li><li><a href="../quilt-backing-calculator/">Quilt Backing Calculator</a></li><li><a href="../paint-calculator/">Paint Calculator</a></li></ul></div>
+<div><h4>CalcNest</h4><ul>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+<li><a href="../privacy-policy/">Privacy Policy</a></li>
+<li><a href="../terms/">Terms of Use</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 CalcNest. All rights reserved.</span><span>Results are estimates — always double-check before you buy or pour.</span></div>
+</div></footer>
+<script src="../main.js" defer></script>
+<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(function (v) {
+    var m = v.units === 'metric', cuft;
+    if (m) cuft = v.length * v.width * (v.thick / 100) * 35.3147;
+    else cuft = v.length * v.width * (v.thick / 12);
+    var waste = v.waste || 0, tot = cuft * (1 + waste / 100);
+    var yd = tot / 27, m3 = tot / 35.3147;
+    return {
+      headline: { label: 'Concrete needed', value: m ? MM.fmt(m3, 2) + ' m³' : MM.fmt(yd, 2) + ' yd³', sub: (m ? '≈ ' + MM.fmt(yd, 2) + ' cubic yards' : '≈ ' + MM.fmt(m3, 2) + ' cubic meters') + ' · includes ' + waste + '% extra' },
+      rows: [
+        { section: 'Volume' },
+        ['Slab volume (no waste)', MM.fmt(cuft, 1) + ' ft³'],
+        ['With waste — cubic feet', MM.fmt(tot, 1)], ['With waste — cubic yards', MM.fmt(yd, 2)], ['With waste — cubic meters', MM.fmt(m3, 2)],
+        { section: 'Bagged mix (rounded up)' },
+        ['80 lb bags (0.60 ft³ each)', String(Math.ceil(tot / 0.6 - 1e-9))],
+        ['60 lb bags (0.45 ft³ each)', String(Math.ceil(tot / 0.45 - 1e-9))],
+        ['50 lb bags (0.375 ft³ each)', String(Math.ceil(tot / 0.375 - 1e-9))]
+      ],
+      notes: [yd > 1.5 ? { t: 'For more than about 1.5 cubic yards, ready-mix delivery is usually quicker and cheaper than bagged mix.' } : { t: 'Small jobs like this are well suited to bagged mix.' },
+        { t: 'Slabs usually sit on 4 in (10 cm) of compacted gravel; add that volume separately.' }]
+    };
+  });});</script>
+</body>
+</html>

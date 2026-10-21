@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cat Food Calculator – How Much Should I Feed? | CalcNest</title>
+<meta name="description" content="Cat food calculator: estimate your cat’s daily calories from weight and life stage, then convert to cups or cans of dry or wet food per day and per meal.">
+<link rel="canonical" href="https://calcnest.com/cat-food-calculator/">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CalcNest">
+<meta property="og:title" content="Cat Food Calculator – How Much Should I Feed? | CalcNest">
+<meta property="og:description" content="Cat food calculator: estimate your cat’s daily calories from weight and life stage, then convert to cups or cans of dry or wet food per day and per meal.">
+<meta property="og:url" content="https://calcnest.com/cat-food-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23c2552d%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Cat Food Calculator","url":"https://calcnest.com/cat-food-calculator/","description":"Cat food calculator: estimate your cat’s daily calories from weight and life stage, then convert to cups or cans of dry or wet food per day and per meal.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"CalcNest","url":"https://calcnest.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much should I feed my cat per day?","acceptedAnswer":{"@type":"Answer","text":"An average neutered 10 lb adult cat needs roughly 260 calories per day. The right portion depends on the calories in your cat’s food, and on age, activity and health."}},{"@type":"Question","name":"How many calories does a kitten need?","acceptedAnswer":{"@type":"Answer","text":"Kittens need about 2.5 times their resting energy requirement because they are growing fast, so they eat more per pound than adult cats."}},{"@type":"Question","name":"How do I calculate cat food portions?","acceptedAnswer":{"@type":"Answer","text":"Work out daily calories, then divide by the calories in one cup or can of your food. The calculator does this and splits the total over your chosen number of meals."}},{"@type":"Question","name":"Should I feed my cat wet or dry food?","acceptedAnswer":{"@type":"Answer","text":"Both can provide complete nutrition. Wet food adds moisture; dry food is convenient and stays fresh longer. Ask your vet if your cat has a health condition."}},{"@type":"Question","name":"My cat is overweight. What do I do?","acceptedAnswer":{"@type":"Answer","text":"Choose “weight loss”, but speak with your vet first. Crash diets are dangerous for cats because fast weight loss can cause liver disease."}},{"@type":"Question","name":"How often should I feed my cat?","acceptedAnswer":{"@type":"Answer","text":"Two meals a day suits most adult cats. Kittens usually need three or four smaller meals."}},{"@type":"Question","name":"Is the calculator a replacement for veterinary advice?","acceptedAnswer":{"@type":"Answer","text":"No. It gives a standard estimate only; your cat’s health and your vet’s advice always take priority."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calcnest.com/"},{"@type":"ListItem","position":2,"name":"Pets","item":"https://calcnest.com/#calculators"},{"@type":"ListItem","position":3,"name":"Cat Food Calculator","item":"https://calcnest.com/cat-food-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap wrap--wide">
+<a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+<nav class="nav" aria-label="Main">
+<a href="../">Home</a>
+<a href="../#calculators">All Calculators</a>
+<a href="../about/">About</a>
+<a class="nav-cta" href="../#calculators">Browse tools</a>
+</nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><a href="../#calculators">Pets</a><span>/</span>Cat Food Calculator</nav>
+<div class="page-head"><h1>Cat Food Calculator</h1><p class="intro">Enter your cat’s weight and life stage to estimate daily calories, then turn that into cups or cans using the calorie count on your cat’s food.</p></div>
+
+<section class="calc" aria-label="Cat Food Calculator">
+<form id="calc-form" novalidate>
+<div class="fields">
+<div class="field"><label for="f-units">Weight in</label><select id="f-units" name="units"><option value="lb" selected>Pounds (lb)</option><option value="kg">Kilograms (kg)</option></select><p class="field-error" role="alert" hidden></p></div><div class="field"><label for="f-weight">Cat’s weight</label><div class="input-wrap"><input id="f-weight" name="weight" type="number" inputmode="decimal" step="any" min="0" value="10" placeholder="" data-label="Cat’s weight" required data-positive data-default-lb="10" data-default-kg="4.5" class="has-unit"><span class="unit" data-u-lb="lb" data-u-kg="kg">lb</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-stage">Life stage / goal</label><select id="f-stage" name="stage"><option value="adult" selected>Neutered adult</option><option value="intact">Intact adult</option><option value="kitten">Kitten (under 1 year)</option><option value="inactive">Inactive or prone to weight gain</option><option value="loss">Weight loss</option></select><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-kcal">Calories in your food (per cup or can)</label><div class="input-wrap"><input id="f-kcal" name="kcal" type="number" inputmode="decimal" step="any" min="0" value="350" placeholder="" data-label="Calories in your food (per cup or can)" required data-positive class="has-unit"><span class="unit">kcal</span></div><span class="hint">See the label. Dry food is often 300–450 kcal per cup; a 3 oz can is often 70–100 kcal.</span><p class="field-error" role="alert" hidden></p></div>
+<div class="field"><label for="f-meals">Meals per day</label><div class="input-wrap"><input id="f-meals" name="meals" type="number" inputmode="decimal" step="1" min="0" value="2" placeholder="" data-label="Meals per day" required data-positive data-max="8"></div><p class="field-error" role="alert" hidden></p></div>
+</div>
+<p class="form-error" id="form-error" role="alert" hidden></p>
+<div class="actions"><button class="btn" type="submit">Calculate</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+</form>
+<div class="result" id="result" aria-live="polite" hidden></div>
+</section>
+
+<div class="ad-slot"></div>
+
+<article class="article">
+<h2>How to use this calculator</h2>
+<ol><li>Enter your cat’s <strong>weight</strong> in pounds or kilograms.</li><li>Pick the <strong>life stage or goal</strong> that fits best.</li><li>Find the <strong>calories per cup or can</strong> on your cat food’s packaging and enter it.</li><li>Choose the <strong>number of meals</strong> and press <strong>Calculate</strong>.</li><li>Weigh your cat monthly and adjust the portion if their weight changes.</li></ol>
+
+<h2>The formula</h2>
+<div class="formula" tabindex="0">RER (kcal/day) = 70 × (weight in kg)^0.75
+daily kcal = RER × life stage factor
+
+factors: neutered adult 1.2 · intact adult 1.4 · kitten 2.5
+inactive 1.0 · weight loss 0.8
+
+portion = daily kcal ÷ kcal per cup (or can)</div>
+<div class="example"><b>Worked example</b>A neutered adult cat of 10 lb (4.54 kg): RER = 70 × 4.54^0.75 ≈ 218 kcal. × 1.2 = <strong>261 kcal per day</strong>. With 350 kcal per cup of dry food, that is <strong>0.75 cup per day</strong>, or about 3/8 cup at each of two meals.</div>
+
+<div class="ad-slot"></div>
+
+<h2>Typical daily calories for neutered adult cats</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Weight</th><th scope="col">Calories per day</th></tr></thead>
+<tbody><tr><td>6 lb (2.7 kg)</td><td>≈ 178 kcal</td></tr><tr><td>8 lb (3.6 kg)</td><td>≈ 221 kcal</td></tr><tr><td>10 lb (4.5 kg)</td><td>≈ 261 kcal</td></tr><tr><td>12 lb (5.4 kg)</td><td>≈ 299 kcal</td></tr><tr><td>14 lb (6.4 kg)</td><td>≈ 336 kcal</td></tr></tbody></table></div>
+<p class="table-note">Calculated with the formula above and a factor of 1.2. Individual needs vary.</p>
+
+<h2>Calories matter more than cups</h2>
+<p>The same cup can hold very different amounts of energy depending on the food, so the calories on the packaging are what count. A cup of one dry food may have 300 kcal and another 450. That is why the calculator asks for the food’s calorie content instead of guessing. Use a kitchen scale if you can: weighing food is much more accurate than scooping.</p>
+<h2>Wet food, dry food and mixing</h2>
+<p>Wet food has more water and fewer calories per ounce, and it helps cats get extra moisture. If you feed both, split the daily calories between them — for example half from wet and half from dry — and work out each portion separately from its own calorie count.</p>
+<h2>Signs your cat’s portion is right</h2>
+<ul><li>You can feel but not see the ribs.</li><li>A visible waist when viewed from above.</li><li>A steady weight over several weeks.</li></ul><p>Treats should make up no more than about 10% of daily calories.</p>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How much should I feed my cat per day?</summary><div class="answer"><p>An average neutered 10 lb adult cat needs roughly 260 calories per day. The right portion depends on the calories in your cat’s food, and on age, activity and health.</p></div></details>
+<details><summary>How many calories does a kitten need?</summary><div class="answer"><p>Kittens need about 2.5 times their resting energy requirement because they are growing fast, so they eat more per pound than adult cats.</p></div></details>
+<details><summary>How do I calculate cat food portions?</summary><div class="answer"><p>Work out daily calories, then divide by the calories in one cup or can of your food. The calculator does this and splits the total over your chosen number of meals.</p></div></details>
+<details><summary>Should I feed my cat wet or dry food?</summary><div class="answer"><p>Both can provide complete nutrition. Wet food adds moisture; dry food is convenient and stays fresh longer. Ask your vet if your cat has a health condition.</p></div></details>
+<details><summary>My cat is overweight. What do I do?</summary><div class="answer"><p>Choose “weight loss”, but speak with your vet first. Crash diets are dangerous for cats because fast weight loss can cause liver disease.</p></div></details>
+<details><summary>How often should I feed my cat?</summary><div class="answer"><p>Two meals a day suits most adult cats. Kittens usually need three or four smaller meals.</p></div></details>
+<details><summary>Is the calculator a replacement for veterinary advice?</summary><div class="answer"><p>No. It gives a standard estimate only; your cat’s health and your vet’s advice always take priority.</p></div></details>
+
+<h2>Related calculators</h2>
+<div class="related"><a href="../dog-age-calculator/"><span class="ri" aria-hidden="true">🐕</span>Dog Age Calculator</a><a href="../dog-chocolate-toxicity-calculator/"><span class="ri" aria-hidden="true">🍫</span>Dog Chocolate Toxicity Calculator</a><a href="../candle-wax-calculator/"><span class="ri" aria-hidden="true">🕯️</span>Candle Wax Calculator</a><a href="../yarn-calculator/"><span class="ri" aria-hidden="true">🧶</span>Yarn Calculator</a></div>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap wrap--wide">
+<div class="foot-grid">
+<div><a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a><p>Free online calculators for home, hobby, pets and everyday life. Fast, private, and free — every calculation runs in your browser.</p></div>
+<div><h4>Popular tools</h4><ul><li><a href="../epoxy-resin-calculator/">Epoxy Resin Calculator</a></li><li><a href="../river-table-epoxy-calculator/">River Table Epoxy Calculator</a></li><li><a href="../yarn-calculator/">Yarn Calculator</a></li><li><a href="../candle-wax-calculator/">Candle Wax Calculator</a></li><li><a href="../quilt-backing-calculator/">Quilt Backing Calculator</a></li><li><a href="../paint-calculator/">Paint Calculator</a></li></ul></div>
+<div><h4>CalcNest</h4><ul>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+<li><a href="../privacy-policy/">Privacy Policy</a></li>
+<li><a href="../terms/">Terms of Use</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 CalcNest. All rights reserved.</span><span>Results are estimates — always double-check before you buy or pour.</span></div>
+</div></footer>
+<script src="../main.js" defer></script>
+<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(function (v) {
+    var kg = v.units === 'kg' ? v.weight : v.weight / 2.20462;
+    var rer = 70 * Math.pow(kg, 0.75);
+    var f = { adult: 1.2, intact: 1.4, kitten: 2.5, inactive: 1.0, loss: 0.8 }[v.stage];
+    var kcal = rer * f, units = kcal / v.kcal, meals = Math.max(1, Math.round(v.meals));
+    return {
+      headline: { label: 'Daily calories', value: MM.fmt(kcal, 0) + ' kcal', sub: MM.fmt(units, 2) + ' cups or cans of food per day, based on ' + v.kcal + ' kcal each' },
+      rows: [
+        { section: 'Energy' },
+        ['Resting energy (RER)', MM.fmt(rer, 0) + ' kcal'],
+        ['Life stage factor', '× ' + f],
+        { section: 'Portions' },
+        ['Food per day', MM.fmt(units, 2) + ' cups / cans'],
+        ['Food per meal (' + meals + ' meals)', MM.fmt(units / meals, 2) + ' cups / cans']
+      ],
+      notes: [{ t: 'This is a starting point. Adjust by 10% if your cat gains or loses weight, and ask your vet before putting a cat on a diet, especially an overweight one.' }]
+    };
+  });});</script>
+</body>
+</html>

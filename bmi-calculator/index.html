@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMI Calculator – Body Mass Index for Adults | CalcNest</title>
+<meta name="description" content="BMI calculator for adults: enter your height and weight in metric or imperial units to see your body mass index, weight category and healthy weight range.">
+<link rel="canonical" href="https://calcnest.com/bmi-calculator/">
+<meta name="theme-color" content="#faf7f2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CalcNest">
+<meta property="og:title" content="BMI Calculator – Body Mass Index for Adults | CalcNest">
+<meta property="og:description" content="BMI calculator for adults: enter your height and weight in metric or imperial units to see your body mass index, weight category and healthy weight range.">
+<meta property="og:url" content="https://calcnest.com/bmi-calculator/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23c2552d%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EC%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"BMI Calculator","url":"https://calcnest.com/bmi-calculator/","description":"BMI calculator for adults: enter your height and weight in metric or imperial units to see your body mass index, weight category and healthy weight range.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"CalcNest","url":"https://calcnest.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is BMI calculated?","acceptedAnswer":{"@type":"Answer","text":"Divide weight in kilograms by height in meters squared. In imperial units, multiply weight in pounds by 703 and divide by height in inches squared."}},{"@type":"Question","name":"What is a healthy BMI?","acceptedAnswer":{"@type":"Answer","text":"For adults, the WHO defines a healthy weight as a BMI of 18.5 to 24.9."}},{"@type":"Question","name":"Is BMI accurate for athletes?","acceptedAnswer":{"@type":"Answer","text":"Not always. Muscle weighs more than fat, so muscular people may have a high BMI without excess body fat."}},{"@type":"Question","name":"Does BMI differ for men and women?","acceptedAnswer":{"@type":"Answer","text":"The adult categories are the same, though body fat percentages at a given BMI differ between men and women."}},{"@type":"Question","name":"Can I use BMI for my child?","acceptedAnswer":{"@type":"Answer","text":"No. Children use age- and sex-specific percentile charts. Ask your doctor."}},{"@type":"Question","name":"Does age affect BMI?","acceptedAnswer":{"@type":"Answer","text":"The formula does not change, but a slightly higher BMI may be acceptable in older adults. Ask your doctor."}},{"@type":"Question","name":"Is this medical advice?","acceptedAnswer":{"@type":"Answer","text":"No. It is an informational screening tool. Please consult a health professional about your weight."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://calcnest.com/"},{"@type":"ListItem","position":2,"name":"Everyday","item":"https://calcnest.com/#calculators"},{"@type":"ListItem","position":3,"name":"BMI Calculator","item":"https://calcnest.com/bmi-calculator/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap wrap--wide">
+<a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a>
+<button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
+<nav class="nav" aria-label="Main">
+<a href="../">Home</a>
+<a href="../#calculators">All Calculators</a>
+<a href="../about/">About</a>
+<a class="nav-cta" href="../#calculators">Browse tools</a>
+</nav>
+</div></header>
+<main id="main">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><a href="../#calculators">Everyday</a><span>/</span>BMI Calculator</nav>
+<div class="page-head"><h1>BMI Calculator</h1><p class="intro">Enter your height and weight to see your body mass index, the WHO weight category and the weight range that corresponds to a healthy BMI for your height.</p></div>
+
+<section class="calc" aria-label="BMI Calculator">
+<form id="calc-form" novalidate>
+<div class="fields">
+<div class="field"><label for="f-units">Units</label><select id="f-units" name="units"><option value="imperial" selected>Imperial (ft, in, lb)</option><option value="metric">Metric (cm, kg)</option></select><p class="field-error" role="alert" hidden></p></div><div class="field" data-show-if="units=imperial"><label for="f-ft">Height — feet</label><div class="input-wrap"><input id="f-ft" name="ft" type="number" inputmode="decimal" step="1" min="0" value="5" placeholder="" data-label="Height — feet" required data-positive class="has-unit"><span class="unit">ft</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field" data-show-if="units=imperial"><label for="f-inch">Height — inches</label><div class="input-wrap"><input id="f-inch" name="inch" type="number" inputmode="decimal" step="any" min="0" value="9" placeholder="" data-label="Height — inches" required data-max="11.9" class="has-unit"><span class="unit">in</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field full" data-show-if="units=metric"><label for="f-cm">Height</label><div class="input-wrap"><input id="f-cm" name="cm" type="number" inputmode="decimal" step="any" min="0" value="175" placeholder="" data-label="Height" required data-positive class="has-unit"><span class="unit">cm</span></div><p class="field-error" role="alert" hidden></p></div>
+<div class="field full"><label for="f-weight">Weight</label><div class="input-wrap"><input id="f-weight" name="weight" type="number" inputmode="decimal" step="any" min="0" value="154" placeholder="" data-label="Weight" required data-positive data-default-imperial="154" data-default-metric="70" class="has-unit"><span class="unit" data-u-imperial="lb" data-u-metric="kg">lb</span></div><p class="field-error" role="alert" hidden></p></div>
+</div>
+<p class="form-error" id="form-error" role="alert" hidden></p>
+<div class="actions"><button class="btn" type="submit">Calculate</button><button class="btn btn-ghost" type="reset">Reset</button></div>
+</form>
+<div class="result" id="result" aria-live="polite" hidden></div>
+</section>
+
+<div class="ad-slot"></div>
+
+<article class="article">
+<h2>How to use this calculator</h2>
+<ol><li>Choose <strong>imperial or metric</strong> units.</li><li>Enter your <strong>height</strong> (feet and inches, or centimeters).</li><li>Enter your <strong>weight</strong>.</li><li>Press <strong>Calculate</strong> to see your BMI, category and healthy weight range.</li></ol>
+
+<h2>The formula</h2>
+<div class="formula" tabindex="0">metric:   BMI = weight (kg) ÷ height (m)²
+imperial: BMI = 703 × weight (lb) ÷ height (in)²
+
+healthy weight range = 18.5 × h² to 24.9 × h²  (h in meters)</div>
+<div class="example"><b>Worked example</b>A person who is 175 cm (1.75 m) and weighs 70 kg: BMI = 70 ÷ 1.75² = 70 ÷ 3.0625 = <strong>22.9</strong>, in the healthy range of 18.5–24.9.</div>
+
+<div class="ad-slot"></div>
+
+<h2>Adult BMI categories (WHO)</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">BMI</th><th scope="col">Category</th></tr></thead>
+<tbody><tr><td>Below 18.5</td><td>Underweight</td></tr><tr><td>18.5 – 24.9</td><td>Healthy weight</td></tr><tr><td>25.0 – 29.9</td><td>Overweight</td></tr><tr><td>30.0 – 34.9</td><td>Obesity class I</td></tr><tr><td>35.0 – 39.9</td><td>Obesity class II</td></tr><tr><td>40 and above</td><td>Obesity class III</td></tr></tbody></table></div>
+<p class="table-note">These cut-offs apply to adults aged 20 and over. Children use age- and sex-specific percentile charts.</p>
+
+<h2>What BMI can and cannot tell you</h2>
+<p>Body mass index compares weight to height and is widely used to screen for weight-related health risks across populations. It is quick and free, but it cannot distinguish muscle from fat, does not show where fat is stored and may be less accurate for athletes, older adults, pregnant women and people of some ethnic backgrounds. Use it as one data point, alongside waist measurement, fitness and blood tests.</p>
+<h2>Using the healthy range</h2>
+<p>The range shown is the weight that gives a BMI between 18.5 and 24.9 at your height. It is a guide rather than a target; the healthiest weight for you depends on your age, build and medical history. If you want to lose or gain weight, talk with a doctor or registered dietitian.</p>
+<h2>Not for children</h2>
+<p>This calculator is for adults. Children and teenagers are assessed using BMI-for-age percentiles that account for growth, so use a paediatric growth chart or ask your doctor.</p>
+
+<h2>Frequently asked questions</h2>
+<details><summary>How is BMI calculated?</summary><div class="answer"><p>Divide weight in kilograms by height in meters squared. In imperial units, multiply weight in pounds by 703 and divide by height in inches squared.</p></div></details>
+<details><summary>What is a healthy BMI?</summary><div class="answer"><p>For adults, the WHO defines a healthy weight as a BMI of 18.5 to 24.9.</p></div></details>
+<details><summary>Is BMI accurate for athletes?</summary><div class="answer"><p>Not always. Muscle weighs more than fat, so muscular people may have a high BMI without excess body fat.</p></div></details>
+<details><summary>Does BMI differ for men and women?</summary><div class="answer"><p>The adult categories are the same, though body fat percentages at a given BMI differ between men and women.</p></div></details>
+<details><summary>Can I use BMI for my child?</summary><div class="answer"><p>No. Children use age- and sex-specific percentile charts. Ask your doctor.</p></div></details>
+<details><summary>Does age affect BMI?</summary><div class="answer"><p>The formula does not change, but a slightly higher BMI may be acceptable in older adults. Ask your doctor.</p></div></details>
+<details><summary>Is this medical advice?</summary><div class="answer"><p>No. It is an informational screening tool. Please consult a health professional about your weight.</p></div></details>
+
+<h2>Related calculators</h2>
+<div class="related"><a href="../percentage-calculator/"><span class="ri" aria-hidden="true">％</span>Percentage Calculator</a><a href="../tip-calculator/"><span class="ri" aria-hidden="true">🧾</span>Tip Calculator</a><a href="../discount-calculator/"><span class="ri" aria-hidden="true">🏷️</span>Discount Calculator</a><a href="../dog-food-calculator/"><span class="ri" aria-hidden="true">🦴</span>Dog Food Calculator</a></div>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap wrap--wide">
+<div class="foot-grid">
+<div><a class="logo" href="../" aria-label="CalcNest home"><span class="logo-mark" aria-hidden="true">C</span><span class="logo-text">Calc<span>Nest</span></span></a><p>Free online calculators for home, hobby, pets and everyday life. Fast, private, and free — every calculation runs in your browser.</p></div>
+<div><h4>Popular tools</h4><ul><li><a href="../epoxy-resin-calculator/">Epoxy Resin Calculator</a></li><li><a href="../river-table-epoxy-calculator/">River Table Epoxy Calculator</a></li><li><a href="../yarn-calculator/">Yarn Calculator</a></li><li><a href="../candle-wax-calculator/">Candle Wax Calculator</a></li><li><a href="../quilt-backing-calculator/">Quilt Backing Calculator</a></li><li><a href="../paint-calculator/">Paint Calculator</a></li></ul></div>
+<div><h4>CalcNest</h4><ul>
+<li><a href="../about/">About</a></li>
+<li><a href="../contact/">Contact</a></li>
+<li><a href="../privacy-policy/">Privacy Policy</a></li>
+<li><a href="../terms/">Terms of Use</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 CalcNest. All rights reserved.</span><span>Results are estimates — always double-check before you buy or pour.</span></div>
+</div></footer>
+<script src="../main.js" defer></script>
+<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(function (v) {
+    var m = v.units === 'metric';
+    var h = m ? v.cm / 100 : ((v.ft || 0) * 12 + (v.inch || 0)) * 0.0254;
+    var kg = m ? v.weight : v.weight / 2.20462;
+    if (h < 0.9 || h > 2.5) return { error: 'Please enter a realistic adult height.' };
+    var bmi = kg / (h * h);
+    var cat = bmi < 18.5 ? 'Underweight' : bmi < 25 ? 'Healthy weight' : bmi < 30 ? 'Overweight' : 'Obesity';
+    var lo = 18.5 * h * h, hi = 24.9 * h * h;
+    var w = function (k) { return m ? MM.fmt(k, 1) + ' kg' : MM.fmt(k * 2.20462, 0) + ' lb'; };
+    return {
+      headline: { label: 'Your BMI', value: MM.fmt(bmi, 1), sub: cat + ' (WHO adult categories)' },
+      rows: [
+        { section: 'Result' }, ['BMI', MM.fmt(bmi, 1) + ' kg/m²'], ['Category', cat],
+        { section: 'Healthy range for your height (BMI 18.5–24.9)' }, ['Weight range', w(lo) + ' – ' + w(hi)],
+        { section: 'WHO categories' }, ['Underweight', 'below 18.5'], ['Healthy weight', '18.5 – 24.9'], ['Overweight', '25 – 29.9'], ['Obesity', '30 and above']
+      ],
+      notes: [{ t: 'BMI is a screening tool, not a diagnosis. It does not measure body fat, muscle or fitness. Speak with a doctor or dietitian about your health.' }]
+    };
+  });});</script>
+</body>
+</html>
