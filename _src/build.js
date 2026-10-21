@@ -24,8 +24,9 @@ const CATS = {
   home: { label: 'Home & DIY', blurb: 'Paint, tile and concrete' },
   pets: { label: 'Pets', blurb: 'Feeding, safety and age tools' },
   everyday: { label: 'Everyday', blurb: 'Percentages, tips, discounts and BMI' },
+  image: { label: 'Image Tools', blurb: 'Convert, compress, resize and read text from images' },
 };
-const tools = [...require('./tools-craft'), ...require('./tools-more'), ...require('./tools-phase2'), ...require('./tools-phase3')];
+const tools = [...require('./tools-craft'), ...require('./tools-more'), ...require('./tools-phase2'), ...require('./tools-phase3'), ...require('./tools-image')];
 const bySlug = Object.fromEntries(tools.map((t) => [t.slug, t]));
 const today = new Date().toISOString().slice(0, 10);
 
@@ -73,7 +74,7 @@ ${logoHtml(root)}
 <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button>
 <nav class="nav" aria-label="Main">
 ${a(root, 'Home', 'home')}
-${a(root + '#calculators', 'All Calculators', 'all')}
+${a(root + '#calculators', 'All Tools', 'all')}
 ${a(root + 'about/', 'About', 'about')}
 <a class="nav-cta" href="${root}#calculators">Browse tools</a>
 </nav>
@@ -134,14 +135,14 @@ function toolPage(t) {
   const unitsField = t.units
     ? fieldHtml({ name: 'units', type: 'select', label: t.unitsLabel || 'Units', options: t.units, value: firstUnit }, firstUnit)
     : '';
-  const fields = unitsField + t.fields.map((f) => fieldHtml(f, firstUnit)).join('\n');
+  const fields = unitsField + (t.fields || []).map((f) => fieldHtml(f, firstUnit)).join('\n');
   const faqs = t.faqs;
   const related = t.related.map((s) => bySlug[s]).filter(Boolean);
 
   const ld = [
     {
       '@context': 'https://schema.org', '@type': 'WebApplication', name: t.h1, url,
-      description: t.description, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any',
+      description: t.description, applicationCategory: t.appCategory || 'UtilitiesApplication', operatingSystem: 'Any',
       browserRequirements: 'Requires JavaScript', inLanguage: 'en',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       publisher: { '@type': 'Organization', name: SITE.name, url: SITE.domain },
@@ -167,7 +168,10 @@ function toolPage(t) {
 <nav class="crumbs" aria-label="Breadcrumb"><a href="${root}">Home</a><span>/</span><a href="${root}#calculators">${esc(CATS[t.cat].label)}</a><span>/</span>${esc(t.h1)}</nav>
 <div class="page-head"><h1>${esc(t.h1)}</h1><p class="intro">${t.intro}</p></div>
 
-<section class="calc" aria-label="${esc(t.h1)}">
+${t.app ? `<section class="calc" aria-label="${esc(t.h1)}">
+<div id="img-app" data-mode="${t.app.mode}" data-format="${t.app.format || ''}" data-accept="${t.app.accept || 'image/*'}"></div>
+<noscript><p class="form-error">This tool needs JavaScript enabled.</p></noscript>
+</section>` : `<section class="calc" aria-label="${esc(t.h1)}">
 <form id="calc-form" novalidate>
 <div class="fields">
 ${fields}
@@ -176,7 +180,7 @@ ${fields}
 <div class="actions"><button class="btn" type="submit">${esc(t.button || 'Calculate')}</button><button class="btn btn-ghost" type="reset">Reset</button></div>
 </form>
 <div class="result" id="result" aria-live="polite" hidden></div>
-</section>
+</section>`}
 
 <div class="ad-slot"></div>
 
@@ -184,9 +188,9 @@ ${fields}
 <h2>How to use this ${esc(t.noun || 'calculator')}</h2>
 <ol>${t.steps.map((s) => `<li>${s}</li>`).join('')}</ol>
 
-<h2>The formula</h2>
+<h2>${t.formula.title || 'The formula'}</h2>
 <div class="formula" tabindex="0">${t.formula.code}</div>
-<div class="example"><b>Worked example</b>${t.formula.example}</div>
+<div class="example"><b>${t.formula.label || 'Worked example'}</b>${t.formula.example}</div>
 
 <div class="ad-slot"></div>
 
@@ -200,48 +204,48 @@ ${extra}
 <h2>Frequently asked questions</h2>
 ${faqs.map(([q, a]) => `<details><summary>${q}</summary><div class="answer"><p>${a}</p></div></details>`).join('\n')}
 
-<h2>Related calculators</h2>
+<h2>Related ${t.app ? 'tools' : 'calculators'}</h2>
 <div class="related">${related.map((r) => `<a href="${root}${r.slug}/"><span class="ri" aria-hidden="true">${r.icon}</span>${esc(r.h1)}</a>`).join('')}</div>
 </article>
 </div>
 </main>`;
 
   return head({ title, desc: t.description, url, root, ld }) + '\n' + header(root, '') + body + '\n' + footer(root) +
-    `\n<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(${t.compute.toString()});});</script>\n</body>\n</html>\n`;
+    (t.app ? `\n<script src="${root}${t.app.script || 'img.js'}" defer></script>\n</body>\n</html>\n` : `\n<script>window.addEventListener('DOMContentLoaded',function(){MM.calc(${t.compute.toString()});});</script>\n</body>\n</html>\n`);
 }
 
 /* ---------- home ---------- */
 function homePage() {
   const root = './';
   const url = SITE.domain + '/';
-  const title = `${SITE.name} – Free Craft, DIY & Pet Calculators`;
-  const desc = `Free online calculators for epoxy resin, yarn, candles, paint, flooring, concrete, pet feeding and everyday maths. Accurate answers in seconds, no sign-up.`;
+  const title = `${SITE.name} – Free Calculators & Online Image Tools`;
+  const desc = `Free online calculators and image tools: paint, flooring, concrete, pet feeding, BMI, plus image converter, compressor, resizer and image to text.`;
   const ld = [
     { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url, inLanguage: 'en' },
     { '@context': 'https://schema.org', '@type': 'Organization', name: SITE.name, url, email: SITE.email },
   ];
   const cards = tools.map((t) => `<a class="tool" href="${t.slug}/" data-cat="${t.cat}" data-name="${esc((t.h1 + ' ' + t.keywords).toLowerCase())}">
 <span class="tool-icon" aria-hidden="true">${t.icon}</span>
-<h3>${esc(t.h1)}</h3><p>${esc(t.card)}</p><span class="tool-go">Open calculator</span></a>`).join('\n');
+<h3>${esc(t.h1)}</h3><p>${esc(t.card)}</p><span class="tool-go">Open tool</span></a>`).join('\n');
   const chips = `<button class="chip active" data-cat="all" aria-pressed="true">All tools</button>` +
     Object.entries(CATS).map(([k, c]) => `<button class="chip" data-cat="${k}" aria-pressed="false">${c.label}</button>`).join('');
   const body = `
 <main id="main">
 <section class="hero"><div class="wrap">
 <p class="eyebrow">Free · Fast · Private</p>
-<h1>Free calculators for every <em>project</em>, pet &amp; everyday question</h1>
-<p class="lead">From paint and flooring to pet feeding, percentages and BMI — get a clear, accurate answer in seconds. No sign-up, nothing to install.</p>
+<h1>Free calculators &amp; tools for every <em>project</em>, pet &amp; everyday task</h1>
+<p class="lead">From paint and flooring to pet feeding, BMI and image converters — get a clear answer in seconds. No sign-up, and your files never leave your device.</p>
 <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-<input id="tool-search" type="search" placeholder="Search calculators… e.g. epoxy, yarn, paint" aria-label="Search calculators" autocomplete="off"></div>
-<div class="stats"><div><b>${tools.length}</b>calculators</div><div><b>100%</b>free to use</div><div><b>0</b>sign-ups needed</div></div>
+<input id="tool-search" type="search" placeholder="Search tools… e.g. paint, BMI, image converter" aria-label="Search tools" autocomplete="off"></div>
+<div class="stats"><div><b>${tools.length}</b>free tools</div><div><b>100%</b>free to use</div><div><b>0</b>sign-ups needed</div></div>
 </div></section>
 
 <section class="section" id="calculators"><div class="wrap wrap--wide">
-<div class="section-head"><h2>All calculators</h2><div class="chips" role="group" aria-label="Filter by category">${chips}</div></div>
+<div class="section-head"><h2>All tools</h2><div class="chips" role="group" aria-label="Filter by category">${chips}</div></div>
 <div class="grid">
 ${cards}
 </div>
-<p class="no-results" id="no-results" hidden>No calculators match your search — try a different word.</p>
+<p class="no-results" id="no-results" hidden>No tools match your search — try a different word.</p>
 </div></section>
 
 <div class="wrap wrap--wide"><div class="ad-slot"></div></div>

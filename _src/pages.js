@@ -49,6 +49,9 @@ module.exports = (SITE) => {
 <h2>Information you enter in calculators</h2>
 <p>All calculations run locally in your browser. The numbers you type into our calculators are not transmitted to or stored on our servers.</p>
 
+<h2>Image tools</h2>
+<p>Our image tools (converter, compressor, resizer and image-to-text) process your files locally in your browser. Your images are not uploaded to or stored on our servers. The image-to-text tool downloads an open-source text-recognition engine and language data from the jsDelivr content delivery network and Tesseract language servers; those providers may receive your IP address, but not your image.</p>
+
 <h2>Information we collect automatically</h2>
 <p>Like most websites, we and our partners may collect technical information such as your IP address, browser type, device, pages visited, time spent and referring website. This data is used to operate, secure and improve the site.</p>
 
